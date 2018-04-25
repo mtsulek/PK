@@ -1,0 +1,13 @@
+
+definiuj FUNKCJASORTOWANIE która przyjmuje zmienną VEKTOR
+    LICZBA = zaokrągleniu do góry reszty z dzielenia długości wektora VECTOR / 2
+    kiedy LICZBA równa się TRUE
+        dla kazdej liczby I oraz J w VECTOR do którego został dodany licznik dla każdej iterowalnej wartości
+            kiedy I >= LICZBA oraz VECTOR[I - LICZBA] > J
+                VECTOR[I] = VECTOR[I - LICZBA]
+                I -= LICZBA
+            VECTOR[I] = J
+        jeżeli LICZBA == 2
+            wtedy przypisz LICZBA = 1
+        "ELSE" 
+            LICZBA = LICZBA * 5.0 / 11

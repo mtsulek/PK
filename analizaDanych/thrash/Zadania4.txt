@@ -1,0 +1,16 @@
+﻿Zad 3
+Znajdź funkcję generującą momenty rozkładu Gaussa.
+
+
+
+Zad 4
+Znajdź wartość oczekiwaną E(X):
+
+Znajdź wartość oczekiwaną E(X^2):
+
+Ostatecznie:
+
+…
+Zad 5
+
+

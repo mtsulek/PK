@@ -1,0 +1,65 @@
+# Używając dowolnej przedstawionej metody sortowania z zajęd nr 3, napisz  z
+#a pomocą pseudokodualgorytm sortowania wektoradowolnej długości.
+# PSEUDOKOD:
+
+fukcja kopcuj(wektor, rozmiarKopca, index)
+  zmienna wiekszaLiczba = Index
+  zmienna lewo = 2 * index + 1
+  zmienna prawo = 2 * index + 2
+
+  jeżeli lewo < rozmiarKopca oraz wektor[index] < wektor[lewo]:
+    większaLiczba = lewo
+
+  jeżeli prawo < rozmiarKopca oraz wektor[większaLiczba] < wektor[prawo]:
+    większaLiczba = prawo
+
+  jeżeli większaLiczba != index:
+    wektor[index] = wektor[większaLiczba] oraz wektor[większaLiczba] = wektor[index]
+    wywołaj kopcuj(wektor, rozmiarKopca, większaLiczba)
+
+funkcja sortuj(wektor):
+  zmienna rozmiar = wywołaj wielkość(wektor)
+  dla liczba w przedziale(rozmiar, -1, -1):
+    wywołaj kopcuj(wektor, rozmiar, liczba)
+
+  dla liczba w przedziale(rozmiar-1, 0, -1):
+    wektor[liczba], wektor[0] = wektor[0], wektor[liczba]
+    wywołaj kopcuj(wektor, liczba, 0)
+
+  zwróc wektor 
+
+# KOD:
+def kopcuj(wektor, rozmiarKopca, index):
+  większaLiczba = index
+  # Robię kopczyk
+  lewo = 2 * index + 1
+  prawo = 2 * index + 2
+
+  # Sprawdzam czy index lewy i prawy w ogóle istnieje i czy wektor[iteracja] < wektor[lewa czesc kopca]
+  if lewo < rozmiarKopca and wektor[index] < wektor[lewo]:
+    większaLiczba = lewo
+
+  # Analogicznie z drugiej strony
+  if prawo < rozmiarKopca and wektor[większaLiczba] < wektor[prawo]:
+    większaLiczba = prawo
+
+  # Zamieniam miejscem i wchodzę głębiej
+  if większaLiczba != index:
+    wektor[index], wektor[większaLiczba] = wektor[większaLiczba], wektor[index]
+    kopcuj(wektor, rozmiarKopca, większaLiczba)
+
+def sortuj(wektor):
+  rozmiar = len(wektor)
+  # Odliczam od ostatniego indexu i kopcuje dla każdej iteracji
+  for liczba in range(rozmiar, -1, -1):
+    kopcuj(wektor, rozmiar, liczba)
+
+  # Kopcuję mniejszą listę/wektor po indexie 0
+  for liczba in range(rozmiar-1, 0, -1):
+    wektor[liczba], wektor[0] = wektor[0], wektor[liczba]
+    kopcuj(wektor, liczba, 0)
+
+  return wektor
+
+wektorxD = [1,1,1,2,3,4,55435,65,-1,5435345,435345,435437,6575634,324,8786,5463,345,5467,7865,345,345,745,456,34,65]
+print(sortuj(wektorxD))

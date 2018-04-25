@@ -1,0 +1,4 @@
+################ 
+run:
+	g++ main.cpp -o main.x
+	./main.x
