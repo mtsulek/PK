@@ -1,0 +1,16 @@
+L1=imread('mikolaj.jpg');
+L1 = rgb2gray(L1);
+figure;
+imshow(L1);
+figure;
+imhist(L1);
+ylabel('Ilość pikseli', 'FontSize',15,'FontName','Arial CE');
+L2a=L1>120;
+figure;
+imshow(L2a);
+L2b=L1>180;
+figure;
+imshow(L2b);
+figure;
+L2c=L1>200;
+imshow(L2c);

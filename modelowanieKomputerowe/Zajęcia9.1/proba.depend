@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1521469755 source:d:\habieda maria\mk\zajêcia3.1\proba.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_image.h>
+
+1523890864 source:d:\habieda maria\mk\zajêcia7\proba.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_image.h>
+	<cstdio>
+	<cstdlib>
+	<iostream>
+	<math.h>
+
+1526306898 source:f:\zajêcia9.1\proba.cpp
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	<allegro5/allegro_image.h>
+	<cstdio>
+	<cstdlib>
+	<iostream>
+	<math.h>
+
