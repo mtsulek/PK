@@ -1,0 +1,63 @@
+﻿Zad 1.
+
+1) Newton: 
+lub: 
+
+oraz: 
+
+Więc:
+
+
+
+
+Więc:
+  Wiedząc, że: 
+
+Ostatecznie:
+
+
+
+2) Równanie Lagrangea:
+
+
+
+Wzór:
+
+
+
+
+Zapisanie Energii dla rozciągniętej spręzynki:
+V:
+ czyli: 
+
+Wynik: 
+
+
+
+T:
+
+
+Ostatecznie L:
+ podstawiając pod: 
+
+otrzymujemy: 
+
+3) Równanie Hamiltona:
+
+Wzór:
+
+
+Po podstawieniu T i V:
+
+
+
+Liczymy pochodną z Hamiltonianu:
+		=  
+ 	=  
+
+Próbuję ułożyć równanie w takiej samej postaci jak Newton:
+
+ podstawiam pod 
+
+Otrzymuję: 
+

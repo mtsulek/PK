@@ -1,0 +1,607 @@
+# Created by Octave 4.0.0, Thu Mar 22 10:22:57 2018 CET <mateusz@mateusz-TM1604>
+# name: ans
+# type: cell
+# rows: 1
+# columns: 75
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 9
+Algorithm
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 11
+AutoScaling
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 28
+complex_step_derivative_equc
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 25
+complex_step_derivative_f
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 30
+complex_step_derivative_inequc
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 28
+complex_step_derivative_objf
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 10
+ComplexEqn
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 4
+covd
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 4
+cpiv
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 5
+cstep
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 5
+debug
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 11
+df_equc_idx
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 15
+df_equc_pstruct
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 13
+df_inequc_idx
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 17
+df_inequc_pstruct
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 10
+df_pstruct
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 4
+dfdp
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 13
+diff_onesided
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 5
+diffp
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 7
+Display
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 4
+equc
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 10
+f_equc_idx
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 14
+f_equc_pstruct
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 12
+f_inequc_idx
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 16
+f_inequc_pstruct
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 9
+f_pstruct
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 11
+FinDiffType
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 5
+fixed
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 10
+fract_prec
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 11
+FunValCheck
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 17
+grad_objf_pstruct
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 7
+GradObj
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 20
+hessian_objf_pstruct
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 6
+inequc
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 15
+inverse_hessian
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 13
+iters_fixed_T
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 8
+Jacobian
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 6
+lbound
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 21
+lm_svd_feasible_alt_s
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 16
+max_fract_change
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 13
+max_rand_step
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 11
+MaxFunEvals
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 7
+MaxIter
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 4
+mu_T
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 9
+objf_grad
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 12
+objf_hessian
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 12
+objf_pstruct
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 9
+objf_type
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 20
+octave_sqp_tolerance
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 9
+OutputFcn
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 14
+parallel_local
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 12
+param_config
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 10
+param_dims
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 11
+param_order
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 8
+plot_cmd
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 13
+recover_state
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 9
+residuals
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 8
+ret_corp
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 8
+ret_covd
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 8
+ret_covp
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 8
+ret_dfdp
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 10
+save_state
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 16
+SearchDirections
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 9
+siman_log
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 19
+stoch_regain_constr
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 6
+T_init
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 5
+T_min
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 6
+TolFun
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 4
+TolX
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 11
+trace_steps
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 8
+TypicalX
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 6
+ubound
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 8
+Updating
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 16
+user_interaction
+
+
+
+# name: <cell-element>
+# type: sq_string
+# elements: 1
+# length: 7
+weights
+
+
+
+
+
