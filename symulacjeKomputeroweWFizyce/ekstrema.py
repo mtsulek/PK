@@ -6,6 +6,7 @@ from mpl_toolkits import mplot3d
 
 # FUNKCJE
 def RozwiążRownanie(rownanie, x ,y, z):
+    """parse string equation with x, y, z parameters and returns resoult"""
     wynik = parser.expr(rownanie).compile() 
     return eval(wynik)
 
@@ -36,5 +37,3 @@ for i in range(0, len(paraPunktow)):
 ax = plt.axes(projection='3d')
 ax.plot_trisurf(xList, yList, zList, cmap='viridis', linewidth=0.5)
 ax.set_title('surface');
-
-plt.show(ax)

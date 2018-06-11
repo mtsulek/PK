@@ -26,8 +26,6 @@ b = 1.0;
 %  (w przypadku zlozonego ODE, warto je zdefiniowac jako funkcje w odrebnym skrypcie *.m)
 %
 
-oscylator2 = @(t,z) [ z(2); (-k * z(1)  - b * z(2))/m ];
-
 % wywolanie ODE45 i uzyskanie wyniku obliczeń numerycznych
 % ic - warunki poczatkowe, t - zakres całkowania numerycznego w zmiennej niezaleznej
 % vopcje - parametry dla ODE45 (opcjonalne)
@@ -35,8 +33,7 @@ oscylator2 = @(t,z) [ z(2); (-k * z(1)  - b * z(2))/m ];
 ic = [0.0 1.0];
 t  = [0.0 10.0];
 
-vopcje   = odeset('RelTol', 1e-4, 'AbsTol', 1e-4, 'InitialStep', 0.01, 'MaxStep', 0.1);
-[tt, xx] = ode45(oscylator2, t, ic, vopcje);
+[tt, xx] = ode45(@ode_1, t, ic);
 
 % ilustracja/wykres (postprodukacja)
 
