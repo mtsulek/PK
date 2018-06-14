@@ -1,4 +1,4 @@
-function dr = ode_1(t,r)
+function dr = odekropli(t,r)
 
 dr = zeros(2,1);
 g = 9.8;
