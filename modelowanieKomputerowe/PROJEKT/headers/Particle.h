@@ -1,49 +1,39 @@
-class Particle{
-    private:
-        struct Coordinates{
-            double x;
-            double y;
-        };
-        Coordinates _coordinate;
+#include <cmath>
+#include "vector"
+#include <time.h>
 
-        struct Velocity{
-            double vx;
-            double vy;
-        };
-        Velocity _velocity;
+struct Coordinates
+{
+	double x;
+	double y;
+};
 
-        struct Size{
-            double mass;
-            double radius;
-        };
-        Size _size;
+struct Velocity
+{
+	double vx;
+	double vy;
+};
 
-    public:
-        Particle(double x, double y, double vx, double vy, double mass, double radius){
-            // Construct Particle; Sets Particle parameters to new ones
-        }
+struct Size
+{
+	double mass;
+	double radius;
+};
+class Particle
+{
+private:
+	Coordinates _coordinate;
+	Velocity _velocity;
+	Size _size;
 
-        double distanceBetweenParticles(struct Coordinates coordinate){
-            // Returns distance between this-> Particle and another particular particles
-        }
+public:
+	Particle(double x, double y, double vx, double vy, double mass,
+			double radius);
+	double distanceBetweenParticles(struct Coordinates coordinate);
+	void ramdomizePosition(double min, double max);
+	Coordinates whereAmI();
+	Size howBigAmI();
+	void setVelocity(double vx, double vy);
+	void setPosition(double x, double y);
 
-        void ramdomizePosition(double min, double max){
-            // Generate Random position between min and max and sets as Particle coordinate
-        }
-
-        Coordinates whereAmI(){
-            // Returns position of particle
-        }
-
-        Size howBigAmI(){
-            // Returns position of particle
-        }
-
-        void setVelocity(double vx, double vy){
-            // Sets new velocity of particular particle
-        }
-
-        void setPosition(double x, double y){
-            // Sets new position of particular particle
-        }
 };
