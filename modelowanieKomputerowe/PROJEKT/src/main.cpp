@@ -18,7 +18,7 @@ using namespace std;
 int simulationFunction(vector<Particle> particle){
     // Simulation work to be done
     for(int j=0; j<particle.size(); j++){
-        al_draw_filled_circle(particle[j].whereAmI().x*20+50 ,particle[j].whereAmI().y*20+50, 20*particle[j].howBigAmI().radius, al_map_rgb(0,255,0));
+        al_draw_filled_circle(particle[j].whereAmI().x ,particle[j].whereAmI().y, particle[j].howBigAmI().radius, al_map_rgb(0,255,0));
     }
 }
 
@@ -87,13 +87,13 @@ int main(){
     // Create no. particles
     int numberOfParticles = 45;
     for(int iterator = 0; iterator < numberOfParticles; iterator++){
-        Particle Particle(1.0, 1.0, 1.0, 1.0, 1.0, 1.0);
+        Particle Particle(1.0, 1.0, 1.0, 1.0, 1.0, 5.0);
         particleContainer.push_back(Particle);
     }
 
     // Give random position to each particle
     for(int particle = 0; particle < particleContainer.size(); particle++){
-        particleContainer[particle].ramdomizePosition(0, 25);
+        particleContainer[particle].ramdomizePosition(0, 600);
         
         // Check if particles can fit
         for(int iterator = particle; iterator < particleContainer.size(); iterator++){

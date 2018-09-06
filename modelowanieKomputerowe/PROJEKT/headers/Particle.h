@@ -27,13 +27,11 @@ private:
 	Size _size;
 
 public:
-	Particle(double x, double y, double vx, double vy, double mass,
-			double radius);
+	Particle(double x, double y, double vx, double vy, double mass, double radius);
 	double distanceBetweenParticles(struct Coordinates coordinate);
 	void ramdomizePosition(double min, double max);
 	Coordinates whereAmI();
 	Size howBigAmI();
 	void setVelocity(double vx, double vy);
 	void setPosition(double x, double y);
-
 };

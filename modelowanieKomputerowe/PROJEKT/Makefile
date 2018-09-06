@@ -7,7 +7,7 @@ ALLEGRO_LIBS=`pkg-config --cflags --libs allegro-5 allegro_ttf-5 allegro_primiti
 
 all:
 	g++ $(SOURCES) -o $(PROGRAM_NAME) -I$(HEADERS) $(ALLEGRO_LIBS) --std=c++11
-
+	./projekt.bin
 run:
 	g++ $(SOURCES) -o $(PROGRAM_NAME) $(ALLEGRO_LIBS) --std=c++11
 	./$(PROGRAM_NAME)
