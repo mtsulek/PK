@@ -9,9 +9,7 @@
  * @param mass
  * @param radius
  */
-Particle::Particle(double x, double y, double vx, double vy, double mass,
-		double radius)
-{
+Particle::Particle(double x, double y, double vx, double vy, double mass,double radius){
 	this->_velocity.vx = vx;
 	this->_velocity.vy = vy;
 	this->_size.mass = mass;
@@ -25,8 +23,7 @@ Particle::Particle(double x, double y, double vx, double vy, double mass,
  * @param coordinate
  * @return
  */
-double Particle::distanceBetweenParticles(struct Coordinates coordinate)
-{
+double Particle::distanceBetweenParticles(struct Coordinates coordinate){
 	double dx = coordinate.x - _coordinate.x;
 	double dy = coordinate.y - _coordinate.y;
 	return sqrt(dx * dx + dy * dy);
@@ -37,8 +34,7 @@ double Particle::distanceBetweenParticles(struct Coordinates coordinate)
  * @param min
  * @param max
  */
-void Particle::ramdomizePosition(double min, double max)
-{
+void Particle::ramdomizePosition(double min, double max){
 
 	int value = ((max - min) + 1) + min;
 	double x = rand() % value;
@@ -51,8 +47,7 @@ void Particle::ramdomizePosition(double min, double max)
  * Returns position of particle
  * @return
  */
-Coordinates Particle::whereAmI()
-{
+Coordinates Particle::whereAmI(){
 	return _coordinate;
 }
 
@@ -60,8 +55,7 @@ Coordinates Particle::whereAmI()
  * Returns position of particle
  * @return
  */
-Size Particle::howBigAmI()
-{
+Size Particle::howBigAmI(){
 	return _size;
 }
 
@@ -70,8 +64,7 @@ Size Particle::howBigAmI()
  * @param vx
  * @param vy
  */
-void Particle::setVelocity(double vx, double vy)
-{
+void Particle::setVelocity(double vx, double vy){
 	this->_velocity.vx = vx;
 	this->_velocity.vy = vy;
 }
@@ -81,8 +74,7 @@ void Particle::setVelocity(double vx, double vy)
  * @param x
  * @param y
  */
-void Particle::setPosition(double x, double y)
-{
+void Particle::setPosition(double x, double y){
 	this->_coordinate.x = x;
 	this->_coordinate.y = y;
 }

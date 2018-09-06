@@ -21,7 +21,6 @@ private:
 	Coordinates _coordinate;
 	Velocity _velocity;
 	Size _size;
-
 public:
 	Particle(double x, double y, double vx, double vy, double mass, double radius);
 	double distanceBetweenParticles(struct Coordinates coordinate);
