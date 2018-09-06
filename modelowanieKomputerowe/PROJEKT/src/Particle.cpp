@@ -9,6 +9,8 @@
  * @param mass
  * @param radius
  */
+
+
 Particle::Particle(double x, double y, double vx, double vy, double mass,double radius){
 	this->_velocity.vx = vx;
 	this->_velocity.vy = vy;
@@ -24,8 +26,8 @@ Particle::Particle(double x, double y, double vx, double vy, double mass,double 
  * @return
  */
 double Particle::distanceBetweenParticles(struct Coordinates coordinate){
-	double dx = coordinate.x - _coordinate.x;
-	double dy = coordinate.y - _coordinate.y;
+	double dx = _coordinate.x - coordinate.x;
+	double dy = _coordinate.y - coordinate.y;
 	return sqrt(dx * dx + dy * dy);
 }
 

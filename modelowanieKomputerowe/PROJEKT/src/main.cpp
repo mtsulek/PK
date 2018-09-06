@@ -78,6 +78,28 @@ class Allegro{
         }
 };
 
+bool ifParticleFits(int particle, vector<Particle> particleContainer, int numberOfParticles){
+
+    for(int iteration = 0; iteration < numberOfParticles; iteration++){
+        bool conflict = true;
+        if(particle != iteration){
+            cout << iteration << endl;
+            while (conflict == true){
+                // cout << "xD2" << endl;
+                particleContainer[particle].ramdomizePosition(0, 500);
+                double distanceOfTwo = particleContainer[particle].distanceBetweenParticles(particleContainer[iteration].whereAmI());
+                double radiusOfTwo = (particleContainer[particle].howBigAmI().radius + particleContainer[iteration].howBigAmI().radius);
+                if(distanceOfTwo > radiusOfTwo){
+                    cout << distanceOfTwo << endl << particleContainer[iteration].whereAmI().x << ", " <<particleContainer[iteration].whereAmI().y << endl;
+                    conflict = false;
+                } else {
+                    conflict = true;
+                }
+            }
+        }
+    }
+}
+
 int main(){
     
     // Obvious
@@ -91,28 +113,38 @@ int main(){
         particleContainer.push_back(Particle);
     }
 
-    // Give random position to each particle
-    for(int particle = 0; particle < particleContainer.size(); particle++){
-        particleContainer[particle].ramdomizePosition(0, 600);
-        
-        // Check if particles can fit
-        for(int iterator = particle; iterator < particleContainer.size(); iterator++){
-            double distanceOfTwo = particleContainer[particle].distanceBetweenParticles(particleContainer[iterator+1].whereAmI());
-            double radiusOfTwo = (particleContainer[particle].howBigAmI().radius + particleContainer[iterator].howBigAmI().radius);
-            if(distanceOfTwo < radiusOfTwo){
-                cout << "Nie mieszczę się! \n";
-                // HERE REROLL POSITION
-            } else {
-                cout << "Wejszłem! \n";
-            }
-            // TO BE CONTINUED!!!
-        }
+    for(int iterator = 0; iterator < numberOfParticles; iterator++){
+        ifParticleFits(iterator, particleContainer, 45);
     }
 
-    // Measure distance between particle 
-    cout << particleContainer[0].distanceBetweenParticles(particleContainer[1].whereAmI()) << endl;
-    cout << (particleContainer[0].howBigAmI().radius + particleContainer[1].howBigAmI().radius) << endl;
 
+
+
+
+    // Give random position to each particle
+    // for(int particle = 0; particle < particleContainer.size(); particle++){
+    //     particleContainer[particle].ramdomizePosition(0, 400);
+        
+    //     // Check if particles can fit
+    //     // for(int iterator = 0; iterator < particleContainer.size(); iterator++){
+    //     //     double distanceOfTwo = particleContainer[particle].distanceBetweenParticles(particleContainer[iterator-1].whereAmI());
+    //     //     double radiusOfTwo = (particleContainer[particle].howBigAmI().radius + particleContainer[iterator].howBigAmI().radius);
+            
+    //     //     while(distanceOfTwo >= radiusOfTwo){
+    //     //         cout << "Nie mieszczę się! \n";
+    //     //         particleContainer[particle].ramdomizePosition(0, 400);
+    //     //         distanceOfTwo = particleContainer[particle].distanceBetweenParticles(particleContainer[iterator-1].whereAmI());
+    //     //         radiusOfTwo = (particleContainer[particle].howBigAmI().radius + particleContainer[iterator].howBigAmI().radius);
+    //     //         // HERE REROLL POSITION
+    //     //     } 
+    //         // TO BE CONTINUED!!!
+    //     }
+    // }
+
+    // Measure distance between particle 
+    // cout << particleContainer[0].distanceBetweenParticles(particleContainer[1].whereAmI()) << endl;
+    // cout << (particleContainer[0].howBigAmI().radius + particleContainer[1].howBigAmI().radius) << endl;
+    particleContainer[0].ramdomizePosition(0, 500);
     // Initiate drawing class and launch simulation function
     Allegro simulation;
     simulation.Draw(800, 600, particleContainer);
