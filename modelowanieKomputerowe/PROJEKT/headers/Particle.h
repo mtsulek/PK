@@ -2,25 +2,21 @@
 #include "vector"
 #include <time.h>
 
-struct Coordinates
-{
+struct Coordinates{
 	double x;
 	double y;
 };
 
-struct Velocity
-{
+struct Velocity{
 	double vx;
 	double vy;
 };
 
-struct Size
-{
+struct Size{
 	double mass;
 	double radius;
 };
-class Particle
-{
+class Particle{
 private:
 	Coordinates _coordinate;
 	Velocity _velocity;
