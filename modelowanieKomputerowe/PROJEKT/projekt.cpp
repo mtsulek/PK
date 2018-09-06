@@ -12,6 +12,8 @@
 
 using namespace std;
 
+
+
 class Particle{
     private:
         struct Coordinates{
@@ -82,6 +84,17 @@ class Particle{
         }
 };
 
+int simulationFunction(vector<Particle> particle){
+    for(int j=0; j<particle.size(); j++){
+        al_draw_filled_circle(particle[j].whereAmI().x*20+50 ,particle[j].whereAmI().y*20+50, 20*particle[j].howBigAmI().radius, al_map_rgb(0,255,0));
+    }
+}
+
+// Create pointer to simulation function
+typedef int ( * simulationPointer)(vector<Particle>);
+// Allocate function adress to pointer 
+simulationPointer simulation = simulationFunction;
+
 class Allegro{
     private:
 
@@ -121,7 +134,7 @@ class Allegro{
                     al_clear_to_color(al_map_rgb(0,0,0));
 
                     // Takes simulation function
-                    simulationFunction(particle);
+                    int result = simulation(particle);
 
                     al_flip_display();
                 }
@@ -130,12 +143,6 @@ class Allegro{
             al_destroy_display(display);
             al_destroy_event_queue(event_queue);
             return 0;
-        }
-
-        void simulationFunction(vector<Particle> particle){
-            for(int j=0; j<particle.size(); j++){
-                al_draw_filled_circle(particle[j].whereAmI().x*20+50 ,particle[j].whereAmI().y*20+50, particle[j].howBigAmI().radius, al_map_rgb(0,255,0));
-            }
         }
 };
 
