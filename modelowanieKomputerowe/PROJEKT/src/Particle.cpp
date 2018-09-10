@@ -35,7 +35,6 @@ double Particle::distanceBetweenParticles(struct Coordinates coordinate){
  * @param max
  */
 void Particle::ramdomizePosition(double min, double max){
-
 	int value = ((max - min) + 1) + min;
 	double x = rand() % value;
 	double y = rand() % value;

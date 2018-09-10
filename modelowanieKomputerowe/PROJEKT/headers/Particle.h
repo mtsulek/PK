@@ -1,3 +1,6 @@
+#ifndef PARTICLE_H
+#define PARTICLE_H
+
 #include <cmath>
 #include "vector"
 #include <time.h>
@@ -16,6 +19,7 @@ struct Size{
 	double mass;
 	double radius;
 };
+
 class Particle{
 private:
 	Coordinates _coordinate;
@@ -30,3 +34,5 @@ public:
 	void setVelocity(double vx, double vy);
 	void setPosition(double x, double y);
 };
+
+#endif
