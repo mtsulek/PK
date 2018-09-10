@@ -18,7 +18,6 @@ int simulationFunction(vector<Particle> particle){
         al_draw_filled_circle(particle[j].whereAmI().x ,particle[j].whereAmI().y, particle[j].howBigAmI().radius, al_map_rgb(0,255,0));
     }
 }
-
 // Create pointer to simulation function
 typedef int ( * simulationPointer)(vector<Particle>);
 // Allocate function adress to pointer 
@@ -27,7 +26,7 @@ simulationPointer simulation = simulationFunction;
 /**
  * Check if Particle can fit between other particles if not -> re-roll position
  * @param particle
- * @param particleContainer POINTER????
+ * @param &particleContainer
  * @param numberOfParticles
  */
 void ifParticleFits(int particle, vector<Particle> &particleContainer, int numberOfParticles){
