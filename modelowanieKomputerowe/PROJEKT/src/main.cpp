@@ -11,12 +11,13 @@
 #include <time.h>
 
 using namespace std;
-
-// Mylibs
 #include "Particle.h"
 
+/**
+ * Simulation "jobs" to be done
+ * @param vector of Particle classes
+ */
 int simulationFunction(vector<Particle> particle){
-    // Simulation work to be done
     for(int j=0; j<particle.size(); j++){
         al_draw_filled_circle(particle[j].whereAmI().x ,particle[j].whereAmI().y, particle[j].howBigAmI().radius, al_map_rgb(0,255,0));
     }
@@ -27,12 +28,14 @@ typedef int ( * simulationPointer)(vector<Particle>);
 // Allocate function adress to pointer 
 simulationPointer simulation = simulationFunction;
 
+
+/**
+ * Class for canvas drawing and simulation
+ */
 class Allegro{
     private:
-
     public:
         Allegro(){
-            // Initialization
             al_init();
             al_install_keyboard();
             al_install_mouse();
@@ -42,8 +45,13 @@ class Allegro{
             al_init_image_addon();
         }
 
-        int Draw(int x, int y, vector<Particle> particle){
-            // Takes size of box and start simulation function
+        /**
+         * Takes size of box and start simulation function
+         * @param x
+         * @param y
+         * @param particleContainer
+         */
+        int Draw(int x, int y, vector<Particle> particleContainer){
             ALLEGRO_DISPLAY *display=al_create_display(800, 600);
             bool redraw=true;
             const float FPS=1;
@@ -66,7 +74,7 @@ class Allegro{
                     al_clear_to_color(al_map_rgb(0,0,0));
 
                     // Takes simulation function
-                    int result = simulation(particle);
+                    int result = simulation(particleContainer);
 
                     al_flip_display();
                 }
@@ -78,14 +86,18 @@ class Allegro{
         }
 };
 
-bool ifParticleFits(int particle, vector<Particle> particleContainer, int numberOfParticles){
-
+/**
+ * Check if Particle can fit between other particles if not -> re-roll position
+ * @param particle
+ * @param particleContainer POINTER????
+ * @param numberOfParticles
+ */
+void ifParticleFits(int particle, vector<Particle> particleContainer, int numberOfParticles){
     for(int iteration = 0; iteration < numberOfParticles; iteration++){
         bool conflict = true;
         if(particle != iteration){
             cout << iteration << endl;
             while (conflict == true){
-                // cout << "xD2" << endl;
                 particleContainer[particle].ramdomizePosition(0, 500);
                 double distanceOfTwo = particleContainer[particle].distanceBetweenParticles(particleContainer[iteration].whereAmI());
                 double radiusOfTwo = (particleContainer[particle].howBigAmI().radius + particleContainer[iteration].howBigAmI().radius);
@@ -98,54 +110,37 @@ bool ifParticleFits(int particle, vector<Particle> particleContainer, int number
             }
         }
     }
+    particleContainer[2].ramdomizePosition(0, 500);
 }
 
 int main(){
-    
-    // Obvious
+    /**
+     * Time dependent rand and initiation of particle class vector
+     */
     srand(time(NULL));
     vector<Particle> particleContainer;
 
-    // Create no. particles
+    /**
+     * Create no. Particles classes
+     */
     int numberOfParticles = 45;
     for(int iterator = 0; iterator < numberOfParticles; iterator++){
         Particle Particle(1.0, 1.0, 1.0, 1.0, 1.0, 5.0);
         particleContainer.push_back(Particle);
     }
 
+    /**
+     * Loop for rand position of each Particle
+     */
     for(int iterator = 0; iterator < numberOfParticles; iterator++){
         ifParticleFits(iterator, particleContainer, 45);
     }
 
-
-
-
-
-    // Give random position to each particle
-    // for(int particle = 0; particle < particleContainer.size(); particle++){
-    //     particleContainer[particle].ramdomizePosition(0, 400);
-        
-    //     // Check if particles can fit
-    //     // for(int iterator = 0; iterator < particleContainer.size(); iterator++){
-    //     //     double distanceOfTwo = particleContainer[particle].distanceBetweenParticles(particleContainer[iterator-1].whereAmI());
-    //     //     double radiusOfTwo = (particleContainer[particle].howBigAmI().radius + particleContainer[iterator].howBigAmI().radius);
-            
-    //     //     while(distanceOfTwo >= radiusOfTwo){
-    //     //         cout << "Nie mieszczę się! \n";
-    //     //         particleContainer[particle].ramdomizePosition(0, 400);
-    //     //         distanceOfTwo = particleContainer[particle].distanceBetweenParticles(particleContainer[iterator-1].whereAmI());
-    //     //         radiusOfTwo = (particleContainer[particle].howBigAmI().radius + particleContainer[iterator].howBigAmI().radius);
-    //     //         // HERE REROLL POSITION
-    //     //     } 
-    //         // TO BE CONTINUED!!!
-    //     }
-    // }
-
-    // Measure distance between particle 
-    // cout << particleContainer[0].distanceBetweenParticles(particleContainer[1].whereAmI()) << endl;
-    // cout << (particleContainer[0].howBigAmI().radius + particleContainer[1].howBigAmI().radius) << endl;
     particleContainer[0].ramdomizePosition(0, 500);
-    // Initiate drawing class and launch simulation function
-    Allegro simulation;
-    simulation.Draw(800, 600, particleContainer);
+
+    /**
+     * Initiate drawing class and launch simulation function
+     */
+    Allegro canvas;
+    canvas.Draw(800, 600, particleContainer);
 }

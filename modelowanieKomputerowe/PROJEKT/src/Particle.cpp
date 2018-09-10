@@ -9,8 +9,6 @@
  * @param mass
  * @param radius
  */
-
-
 Particle::Particle(double x, double y, double vx, double vy, double mass,double radius){
 	this->_velocity.vx = vx;
 	this->_velocity.vy = vy;
