@@ -27,33 +27,33 @@ using namespace std;
 // // Allocate function adress to pointer 
 // simulationPointer simulation = simulationFunction;
 
-bool zderzenie(vector<Particle> &particleContainer, int czastkaI, int czastkaJ, double boxX, double boxY){
+bool zderzenie(vector<Particle> &particleContainer, int cz0, int cz1, double boxX, double boxY){
 	double tmp[4];
     double tempr[4];
-	double Mp = particleContainer[czastkaI].howBigAmI().mass + particleContainer[czastkaJ].howBigAmI().mass;
+	double Mp = particleContainer[cz0].howBigAmI().mass + particleContainer[cz1].howBigAmI().mass;
 
-	double dx01 = getOneDimDistance(particleContainer[czastkaI].whereAmI().x, particleContainer[czastkaJ].whereAmI().x, boxX);
-	double dy01 = getOneDimDistance(particleContainer[czastkaI].whereAmI().y, particleContainer[czastkaJ].whereAmI().y, boxY);
+	double dx01 = getOneDimDistance(particleContainer[cz0].whereAmI().x, particleContainer[cz1].whereAmI().x, boxX);
+	double dy01 = getOneDimDistance(particleContainer[cz0].whereAmI().y, particleContainer[cz1].whereAmI().y, boxY);
 	double dx10 = -dx01;
 	double dy10 = -dy01;
-	double odl01 = particleContainer[czastkaI].distanceBetweenParticles(particleContainer[czastkaJ].whereAmI(), boxX, boxY);
+	double odl01 = particleContainer[cz0].distanceBetweenParticles(particleContainer[cz1].whereAmI(), boxX, boxY);
 	odl01 *= odl01;
+	double dvx01 = particleContainer[cz0].howFastAmI().vx - particleContainer[cz1].howFastAmI().vx;
+	double dvy01 = particleContainer[cz0].howFastAmI().vy - particleContainer[cz1].howFastAmI().vy;
 
-	double dvx01 = particleContainer[czastkaI].howFastAmI().vx - particleContainer[czastkaJ].howFastAmI().vx;
-	double dvy01 = particleContainer[czastkaI].howFastAmI().vy - particleContainer[czastkaJ].howFastAmI().vy;
+	tmp[0] = 2.0 * particleContainer[cz1].howBigAmI().mass / Mp * (dvx01 * dx01 + dvy01 * dy01) * dx01 / odl01;
+	tmp[1] = 2.0 * particleContainer[cz1].howBigAmI().mass / Mp * (dvx01 * dx01 + dvy01 * dy01) * dy01 / odl01;
+	tmp[2] = 2.0 * particleContainer[cz0].howBigAmI().mass / Mp * (-dvx01 * dx10 - dvy01 * dy10) * dx10 / odl01;
+	tmp[3] = 2.0 * particleContainer[cz0].howBigAmI().mass / Mp * (-dvx01 * dx10 - dvy01 * dy10) * dy10 / odl01;
 
-	tmp[0] = 2.0 * particleContainer[czastkaJ].howBigAmI().mass / Mp * (dvx01 * dx01 + dvy01 * dy01) * dx01 / odl01;
-	tmp[1] = 2.0 * particleContainer[czastkaJ].howBigAmI().mass / Mp * (dvx01 * dx01 + dvy01 * dy01) * dy01 / odl01;
-	tmp[2] = 2.0 * particleContainer[czastkaI].howBigAmI().mass / Mp * (-dvx01 * dx10 - dvy01 * dy10) * dx10 / odl01;
-	tmp[3] = 2.0 * particleContainer[czastkaI].howBigAmI().mass / Mp * (-dvx01 * dx10 - dvy01 * dy10) * dy10 / odl01;
+    tempr[0] = particleContainer[cz0].howFastAmI().vx - tmp[0];
+	tempr[1] = particleContainer[cz0].howFastAmI().vy - tmp[1];
+	tempr[2] = particleContainer[cz1].howFastAmI().vx - tmp[2];
+	tempr[3] = particleContainer[cz1].howFastAmI().vy - tmp[3];
+    // cout << tempr[1] <<"\n";
 
-    tempr[0] = particleContainer[czastkaI].howFastAmI().vx - tmp[0];
-	tempr[1] = particleContainer[czastkaI].howFastAmI().vy - tmp[1];
-	tempr[2] = particleContainer[czastkaJ].howFastAmI().vx - tmp[2];
-	tempr[3] = particleContainer[czastkaJ].howFastAmI().vy - tmp[3];
-
-    particleContainer[czastkaI].setVelocity(tempr[0], tempr[1]);
-    particleContainer[czastkaJ].setVelocity(tempr[2], tempr[3]);
+    particleContainer[cz0].setVelocity(tempr[0], tempr[1]);
+    particleContainer[cz1].setVelocity(tempr[2], tempr[3]);
 
 	// ALLEGRO_COLOR zielony = al_map_rgb(0, 255, 0);
 	// cz0->color = zielony;
@@ -96,9 +96,9 @@ int main(){
     /**
      * Create no. Particles classes
      */
-    int numberOfParticles = 2;
+    int numberOfParticles = 50;
     for(int iterator = 0; iterator < numberOfParticles; iterator++){
-        Particle Particle(1.0, 1.0, 1.0, 1.0, 1.0, 10.0);
+        Particle Particle(1.0, 1.0, 1.0, 1.0, 1.0, 5.0);
         particleContainer.push_back(Particle);
     }
     cout << sizeof(particleContainer) << "tutaj";
@@ -126,7 +126,7 @@ int main(){
             particleContainer[iterator].ramdomizePosition(0, 500);
         }
         particleContainer[iterator].setVelocity(vx, vy);
-        cout << vx << vy << endl;
+        // cout << vx << vy << endl;
         zeroPositions.push_back(particleContainer[iterator].whereAmI());
     }
 
@@ -144,13 +144,13 @@ int main(){
 
     int boxX = 800;
     int boxY = 600;
-                int czastaI = 0;
-                int czastaJ = 1;
-                particleContainer[czastaI].setPosition(150, 150);
-                particleContainer[czastaJ].setPosition(150, 300);
+                // int czastaI = 0;
+                // int czastaJ = 1;
+                // particleContainer[czastaI].setPosition(150, 150);
+                // particleContainer[czastaJ].setPosition(150, 300);
     ALLEGRO_DISPLAY *display=al_create_display(boxX, boxY);
     bool redraw=true;
-    const float FPS=200;
+    const float FPS=1;
     ALLEGRO_TIMER *timer=al_create_timer(1.0/FPS);
     al_start_timer(timer);
     ALLEGRO_EVENT_QUEUE *event_queue=al_create_event_queue();
@@ -158,6 +158,8 @@ int main(){
     al_register_event_source(event_queue, al_get_timer_event_source(timer));
 
 
+                // particleContainer[czastaI].setVelocity(0, 3);
+                // particleContainer[czastaJ].setVelocity(0, 0);
     for(;;){
         ALLEGRO_EVENT ev;   
         al_wait_for_event(event_queue,&ev);
@@ -176,11 +178,9 @@ int main(){
                 // pairs->clear();
                 int czastaI = 0;
                 int czastaJ = 1;
-
-                particleContainer[czastaI].setVelocity(0, 3);
-                particleContainer[czastaJ].setVelocity(0, 0);
-                double dt = 1;
-                // s_pair ret_pair(0,0, dt);
+                dt = 5;
+                // double dt = 10e10;
+                // // s_pair ret_pair(0,0, dt);
                 // for (uint64_t c0 = 0; c0 < (particleContainer.size() - 1); c0++)
                 // {
                 //     for (uint64_t c1 = (c0 + 1); c1 < particleContainer.size(); c1++)
@@ -199,13 +199,12 @@ int main(){
                 //     }
                 // }
 
-                zderzenie(particleContainer, czastaI, czastaJ, boxX, boxY);
                 
 
                 // velocity counting 
                 double velocityX = particleContainer[j].howFastAmI().vx;
                 double velocityY = particleContainer[j].howFastAmI().vy;
-                cout << velocityX << velocityY << endl;
+                // cout << velocityX << velocityY << endl;
                 double posX = particleContainer[j].whereAmI().x;
                 double posY = particleContainer[j].whereAmI().y;
 
@@ -218,9 +217,11 @@ int main(){
 
                 particleContainer[j].setPosition(x,y);
 
+                zderzenie(particleContainer, czastaI, czastaJ, boxX, boxY);
 
 
                 al_draw_filled_circle(particleContainer[j].whereAmI().x ,particleContainer[j].whereAmI().y, particleContainer[j].howBigAmI().radius, al_map_rgb(0,255,0));
+                al_draw_line(particleContainer[j].whereAmI().x, particleContainer[j].whereAmI().y, particleContainer[j].whereAmI().x + 10 *(particleContainer[j].howFastAmI().vx) ,particleContainer[j].whereAmI().y + 10 * (particleContainer[j].howFastAmI().vy) ,al_map_rgb(255,0,0), 1);           
             }
 
             al_flip_display();
