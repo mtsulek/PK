@@ -19,6 +19,7 @@ Allegro::Allegro(){
  * @param x
  * @param y
  * @param particleContainer
+ * @param simulationPointer
  */
 int Allegro::Draw(int x, int y, vector<Particle> particleContainer, int ( * simulationPointer)(vector<Particle>)){
     ALLEGRO_DISPLAY *display=al_create_display(800, 600);
@@ -43,8 +44,16 @@ int Allegro::Draw(int x, int y, vector<Particle> particleContainer, int ( * simu
             al_clear_to_color(al_map_rgb(0,0,0));
 
             // Takes simulation function
-            int result = simulationPointer(particleContainer);
-
+            // int result = simulationPointer(particleContainer);
+        al_clear_to_color(al_map_rgb(0,0,0));
+        for(int j=0; j<particle.size(); j++){
+            double velocityX = particle[j].howFastAmI().vx;
+            double velocityY = particle[j].howFastAmI().vy;
+            cout << velocityX << velocityY << endl;
+            double posX = particle[j].whereAmI().x;
+            double posY = particle[j].whereAmI().y;
+            particle[j].setPosition(posX + velocityX * dt, posY + velocityY * dt);
+            al_draw_filled_circle(particle[j].whereAmI().x ,particle[j].whereAmI().y, particle[j].howBigAmI().radius, al_map_rgb(0,255,0));
             al_flip_display();
         }
     }

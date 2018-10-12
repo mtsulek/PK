@@ -31,6 +31,7 @@ public:
 	void ramdomizePosition(double min, double max);
 	Coordinates whereAmI();
 	Size howBigAmI();
+	Velocity howFastAmI();
 	void setVelocity(double vx, double vy);
 	void setPosition(double x, double y);
 };

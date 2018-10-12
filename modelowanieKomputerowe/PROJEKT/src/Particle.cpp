@@ -43,6 +43,14 @@ void Particle::ramdomizePosition(double min, double max){
 }
 
 /**
+ * Returns velocity of particle
+ * @return
+ */
+Velocity Particle::howFastAmI(){
+	return _velocity;
+}
+
+/**
  * Returns position of particle
  * @return
  */
