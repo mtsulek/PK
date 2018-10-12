@@ -18,15 +18,34 @@ Particle::Particle(double x, double y, double vx, double vy, double mass,double 
 	this->_coordinate.y = y;
 }
 
+
+double getOneDimDistance(double x0, double x1, double boxXorY)
+{
+    x0 = x0 - floor(x0 / boxXorY) * boxXorY;
+    double dx = x0 - x1;
+    dx = dx - nearbyint(dx/boxXorY) * boxXorY;
+    return (dx);
+}
+
 /**
  * Returns distance between this-> Particle and another particular particles
  * @param coordinate
  * @return
  */
-double Particle::distanceBetweenParticles(struct Coordinates coordinate){
-	double dx = _coordinate.x - coordinate.x;
-	double dy = _coordinate.y - coordinate.y;
+double Particle::distanceBetweenParticles(struct Coordinates coordinate, double boxX, double boxY){
+	//double dx = _coordinate.x - coordinate.x;
+	//double dy = _coordinate.y - coordinate.y;
+	double dx = getOneDimDistance(_coordinate.x, coordinate.x, boxX);
+	double dy = getOneDimDistance(_coordinate.y, coordinate.y, boxY);
 	return sqrt(dx * dx + dy * dy);
+}
+
+double Particle::oneDimDistance(double x0, double x1, double boxXorY)
+{
+    x0 = x0 - floor(x0 / boxXorY) * boxXorY;
+    double dx = x0 - x1;
+    dx = dx - nearbyint(dx/boxXorY) * boxXorY;
+    return (dx);
 }
 
 /**
@@ -85,3 +104,34 @@ void Particle::setPosition(double x, double y){
 	this->_coordinate.x = x;
 	this->_coordinate.y = y;
 }
+
+double Particle::getTimeTOColision(struct Coordinates coordinate, struct Velocity velocity, struct Size size, double boxX, double boxY){
+	double dradius = this->_size.radius + size.mass;
+	double rij = distanceBetweenParticles(coordinate);
+	
+	double drx = oneDimDistance(coordinate.x, this->_coordinate.x, boxX);
+	double dry = oneDimDistance(coordinate.y, this->_coordinate.y, boxY);
+
+	double dvx = this->_velocity.vx - velocity.vx;
+	double dvy = this->_velocity.vy - velocity.vy;
+	double bij = drx * dvx + dry * dvy;
+	double vij = sqrt(dvx * dvx + dvy * dvy);
+	double tij = 0.0;
+	dradius *= dradius;
+	if (bij * bij - vij * vij * (rij * rij - dradius) < 0.0)
+	{
+		tij = 10e10;
+	}
+	else
+	{
+		tij = (-bij - sqrt(bij * bij - vij * vij * (rij * rij - dradius)))
+				/ (vij * vij);
+	}
+	if (tij < 0.0)
+	{
+		tij = 10e10;
+	}
+
+	return (tij);
+}
+

@@ -10,11 +10,11 @@
 #include "Particle.h"
 using namespace std;
 
-class Allegro{
-private:
-public:
-    Allegro();
-    int Draw(int x, int y, vector<Particle> particleContainer, int ( * simulationPointer)(vector<Particle>));
-};
+// class Allegro{
+// private:
+// public:
+//     Allegro();
+//     int Draw(int x, int y, vector<Particle> particleContainer, int ( * simulationPointer)(vector<Particle>));
+// };
 
 #endif
