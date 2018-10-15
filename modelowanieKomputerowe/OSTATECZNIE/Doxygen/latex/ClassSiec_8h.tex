@@ -1,0 +1,443 @@
+\hypertarget{ClassSiec_8h}{}\section{Class\+Siec.\+h File Reference}
+\label{ClassSiec_8h}\index{Class\+Siec.\+h@{Class\+Siec.\+h}}
+{\ttfamily \#include $<$allegro5/color.\+h$>$}\newline
+{\ttfamily \#include $<$bits/stdint-\/uintn.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$future$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$exception$>$}\newline
+Include dependency graph for Class\+Siec.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ClassSiec_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{ClassSiec_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structparticle}{particle}}
+\item 
+struct \mbox{\hyperlink{structpart__particles}{part\+\_\+particles}}
+\item 
+struct \mbox{\hyperlink{structs__pair}{s\+\_\+pair}}
+\item 
+struct \mbox{\hyperlink{structparticle__zero__time}{particle\+\_\+zero\+\_\+time}}
+\item 
+class \mbox{\hyperlink{classClassSiec}{Class\+Siec}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{ClassSiec_8h_aba51915c87d64af47fb1cc59348961c9}{OK}}~1
+\item 
+\#define \mbox{\hyperlink{ClassSiec_8h_a8fe83ac76edc595f6b98cd4a4127aed5}{E\+R\+R\+OR}}~-\/1
+\item 
+\#define \mbox{\hyperlink{ClassSiec_8h_ad72dbcf6d0153db1b8d8a58001feed83}{D\+E\+B\+UG}}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{ClassSiec_8h_aa11e584dd125456775429c3b9a75b242}{find\+\_\+max}} (T $\ast$data, uint64\+\_\+t size)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{ClassSiec_8h_a203a64f321b303a7af6ce1072aa442ce}{find\+\_\+min}} (T $\ast$data, uint64\+\_\+t size)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{ClassSiec_8h_abc3318d482acddb12f3f4434095f326c}{find\+\_\+max}} (vector$<$ T $>$ $\ast$data)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{ClassSiec_8h_a66657d5791526c5180648f096cd0e37b}{find\+\_\+min}} (vector$<$ T $>$ $\ast$data)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{ClassSiec_8h_aea8e71db6d9977e61536f8129d8de748}{find\+\_\+delta}} (vector$<$ T $>$ $\ast$data)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{ClassSiec_8h_a080bc004de0a84b7dce1cc40943d2356}{find\+\_\+sum}} (vector$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{ClassSiec_8h_a98d2fa9d1a1f6487fbdc786d6b6bda9a}{find\+\_\+average}} (vector$<$ T $>$ \&data)
+\item 
+int \mbox{\hyperlink{ClassSiec_8h_aebe3c045134bed926d50d2b6e36e39d1}{find\+\_\+is\+\_\+in\+\_\+range}} (double value, double centrum, double delta)
+\item 
+int \mbox{\hyperlink{ClassSiec_8h_a0af26329b21bf468404bc298ef514fcd}{find\+\_\+is\+\_\+in\+\_\+range}} (double value, double centrum, double left, double right)
+\item 
+int \mbox{\hyperlink{ClassSiec_8h_ac09c4f66afc9dffbec912d9b227af15d}{save\+\_\+to\+\_\+file}} (std\+::string filename, std\+::string data)
+\item 
+double \mbox{\hyperlink{ClassSiec_8h_aa4200d584f59d89ab0cce9d85f99a564}{get\+\_\+distance\+\_\+1d}} (double x0, double x1, double box\+\_\+x)
+\item 
+double \mbox{\hyperlink{ClassSiec_8h_a71b54469f61e2266d054d489957cf8cf}{get\+\_\+distance\+\_\+2d}} (\mbox{\hyperlink{structparticle}{particle}} $\ast$p0, \mbox{\hyperlink{structparticle}{particle}} $\ast$p1, double box\+\_\+x, double box\+\_\+y)
+\item 
+double \mbox{\hyperlink{ClassSiec_8h_ad2771c2f42d6323693918169e3e50e1d}{get\+\_\+distance\+\_\+2d}} (double x0, double y0, double x1, double y1, double box\+\_\+x, double box\+\_\+y)
+\item 
+int \mbox{\hyperlink{ClassSiec_8h_a83865b3eba7be6cb9dcc6a8f5774cbb0}{zderzenie}} (\mbox{\hyperlink{structparticle}{particle}} $\ast$cz0, \mbox{\hyperlink{structparticle}{particle}} $\ast$cz1, double box\+\_\+x=0.\+0, double box\+\_\+y=0.\+0)
+\item 
+void \mbox{\hyperlink{ClassSiec_8h_a39da542e109c5bbb6f026cbcc0706e6c}{thread\+\_\+\+R\+DF}} (\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$siec, uint64\+\_\+t c1, double prec=100.\+0)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const double \mbox{\hyperlink{ClassSiec_8h_a4e4badfc84da510ffa9a52e97c1fe6e4}{k\+Boltzmann}} = 1.\+0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{ClassSiec_8h_ad72dbcf6d0153db1b8d8a58001feed83}\label{ClassSiec_8h_ad72dbcf6d0153db1b8d8a58001feed83}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!D\+E\+B\+UG@{D\+E\+B\+UG}}
+\index{D\+E\+B\+UG@{D\+E\+B\+UG}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+B\+UG}{DEBUG}}
+{\footnotesize\ttfamily \#define D\+E\+B\+UG~1}
+
+
+
+Definition at line 18 of file Class\+Siec.\+h.
+
+\mbox{\Hypertarget{ClassSiec_8h_a8fe83ac76edc595f6b98cd4a4127aed5}\label{ClassSiec_8h_a8fe83ac76edc595f6b98cd4a4127aed5}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!E\+R\+R\+OR@{E\+R\+R\+OR}}
+\index{E\+R\+R\+OR@{E\+R\+R\+OR}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{E\+R\+R\+OR}{ERROR}}
+{\footnotesize\ttfamily \#define E\+R\+R\+OR~-\/1}
+
+
+
+Definition at line 17 of file Class\+Siec.\+h.
+
+
+
+Referenced by draw\+\_\+all(), draw\+\_\+\+R\+D\+F(), Class\+Siec\+::get\+\_\+particle(), and Class\+Siec\+::set\+\_\+random\+\_\+size().
+
+\mbox{\Hypertarget{ClassSiec_8h_aba51915c87d64af47fb1cc59348961c9}\label{ClassSiec_8h_aba51915c87d64af47fb1cc59348961c9}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!OK@{OK}}
+\index{OK@{OK}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{OK}{OK}}
+{\footnotesize\ttfamily \#define OK~1}
+
+
+
+Definition at line 16 of file Class\+Siec.\+h.
+
+
+
+Referenced by Class\+Siec\+::add\+\_\+particle(), Class\+Siec\+::close\+\_\+file(), Class\+Siec\+::create\+\_\+hexagonal(), Class\+Siec\+::create\+\_\+honeycomb(), Class\+Siec\+::create\+\_\+square(), draw\+\_\+all(), draw\+\_\+\+R\+D\+F(), Class\+Siec\+::fix\+\_\+position(), Class\+Siec\+::flush\+\_\+file(), Class\+Siec\+::get\+\_\+particle(), Class\+Siec\+::init(), Class\+Siec\+::insert\+\_\+to\+\_\+file(), Class\+Siec\+::save\+\_\+\+R\+D\+F(), save\+\_\+to\+\_\+file(), Class\+Siec\+::set\+\_\+dt(), particle\+::set\+\_\+mass(), Class\+Siec\+::set\+\_\+mass\+\_\+all(), Class\+Siec\+::set\+\_\+mass\+\_\+to\+\_\+area(), Class\+Siec\+::set\+\_\+mass\+\_\+to\+\_\+radius(), particle\+::set\+\_\+max\+Velocity(), Class\+Siec\+::set\+\_\+momentum\+\_\+to\+\_\+zero(), Class\+Siec\+::set\+\_\+particles\+\_\+zero\+\_\+time(), particle\+::set\+\_\+pos(), particle\+::set\+\_\+r(), Class\+Siec\+::set\+\_\+random\+\_\+size(), Class\+Siec\+::set\+\_\+random\+\_\+velocity(), particle\+::set\+\_\+vel(), particle\+::step(), Class\+Siec\+::step\+\_\+all(), and zderzenie().
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ClassSiec_8h_a98d2fa9d1a1f6487fbdc786d6b6bda9a}\label{ClassSiec_8h_a98d2fa9d1a1f6487fbdc786d6b6bda9a}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!find\+\_\+average@{find\+\_\+average}}
+\index{find\+\_\+average@{find\+\_\+average}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+average()}{find\_average()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+average (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 79 of file Class\+Siec.\+cpp.
+
+\mbox{\Hypertarget{ClassSiec_8h_aea8e71db6d9977e61536f8129d8de748}\label{ClassSiec_8h_aea8e71db6d9977e61536f8129d8de748}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!find\+\_\+delta@{find\+\_\+delta}}
+\index{find\+\_\+delta@{find\+\_\+delta}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+delta()}{find\_delta()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+delta (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ $\ast$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ClassSiec_8h_aebe3c045134bed926d50d2b6e36e39d1}\label{ClassSiec_8h_aebe3c045134bed926d50d2b6e36e39d1}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!find\+\_\+is\+\_\+in\+\_\+range@{find\+\_\+is\+\_\+in\+\_\+range}}
+\index{find\+\_\+is\+\_\+in\+\_\+range@{find\+\_\+is\+\_\+in\+\_\+range}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+is\+\_\+in\+\_\+range()}{find\_is\_in\_range()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int find\+\_\+is\+\_\+in\+\_\+range (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{double}]{centrum,  }\item[{double}]{delta }\end{DoxyParamCaption})}
+
+
+
+Definition at line 103 of file Class\+Siec.\+cpp.
+
+
+
+Referenced by Class\+Siec\+::create\+\_\+hexagonal(), Class\+Siec\+::create\+\_\+honeycomb(), Class\+Siec\+::set\+\_\+momentum\+\_\+to\+\_\+zero(), and thread\+\_\+siec().
+
+\mbox{\Hypertarget{ClassSiec_8h_a0af26329b21bf468404bc298ef514fcd}\label{ClassSiec_8h_a0af26329b21bf468404bc298ef514fcd}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!find\+\_\+is\+\_\+in\+\_\+range@{find\+\_\+is\+\_\+in\+\_\+range}}
+\index{find\+\_\+is\+\_\+in\+\_\+range@{find\+\_\+is\+\_\+in\+\_\+range}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+is\+\_\+in\+\_\+range()}{find\_is\_in\_range()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int find\+\_\+is\+\_\+in\+\_\+range (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{double}]{centrum,  }\item[{double}]{left,  }\item[{double}]{right }\end{DoxyParamCaption})}
+
+
+
+Definition at line 108 of file Class\+Siec.\+cpp.
+
+\mbox{\Hypertarget{ClassSiec_8h_aa11e584dd125456775429c3b9a75b242}\label{ClassSiec_8h_aa11e584dd125456775429c3b9a75b242}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!find\+\_\+max@{find\+\_\+max}}
+\index{find\+\_\+max@{find\+\_\+max}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+max()}{find\_max()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+max (\begin{DoxyParamCaption}\item[{T $\ast$}]{data,  }\item[{uint64\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 3 of file Class\+Siec.\+cpp.
+
+\mbox{\Hypertarget{ClassSiec_8h_abc3318d482acddb12f3f4434095f326c}\label{ClassSiec_8h_abc3318d482acddb12f3f4434095f326c}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!find\+\_\+max@{find\+\_\+max}}
+\index{find\+\_\+max@{find\+\_\+max}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+max()}{find\_max()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+max (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ $\ast$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ClassSiec_8h_a203a64f321b303a7af6ce1072aa442ce}\label{ClassSiec_8h_a203a64f321b303a7af6ce1072aa442ce}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!find\+\_\+min@{find\+\_\+min}}
+\index{find\+\_\+min@{find\+\_\+min}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+min()}{find\_min()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+min (\begin{DoxyParamCaption}\item[{T $\ast$}]{data,  }\item[{uint64\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file Class\+Siec.\+cpp.
+
+\mbox{\Hypertarget{ClassSiec_8h_a66657d5791526c5180648f096cd0e37b}\label{ClassSiec_8h_a66657d5791526c5180648f096cd0e37b}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!find\+\_\+min@{find\+\_\+min}}
+\index{find\+\_\+min@{find\+\_\+min}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+min()}{find\_min()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+min (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ $\ast$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ClassSiec_8h_a080bc004de0a84b7dce1cc40943d2356}\label{ClassSiec_8h_a080bc004de0a84b7dce1cc40943d2356}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!find\+\_\+sum@{find\+\_\+sum}}
+\index{find\+\_\+sum@{find\+\_\+sum}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{find\+\_\+sum()}{find\_sum()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+sum (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 69 of file Class\+Siec.\+cpp.
+
+\mbox{\Hypertarget{ClassSiec_8h_aa4200d584f59d89ab0cce9d85f99a564}\label{ClassSiec_8h_aa4200d584f59d89ab0cce9d85f99a564}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!get\+\_\+distance\+\_\+1d@{get\+\_\+distance\+\_\+1d}}
+\index{get\+\_\+distance\+\_\+1d@{get\+\_\+distance\+\_\+1d}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+distance\+\_\+1d()}{get\_distance\_1d()}}
+{\footnotesize\ttfamily double get\+\_\+distance\+\_\+1d (\begin{DoxyParamCaption}\item[{double}]{x0,  }\item[{double}]{x1,  }\item[{double}]{box\+\_\+x }\end{DoxyParamCaption})}
+
+Calculate the distance in box 
+\begin{DoxyParams}{Parameters}
+{\em x0} & \\
+\hline
+{\em x1} & \\
+\hline
+{\em box\+\_\+x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 228 of file Class\+Siec.\+cpp.
+
+
+
+Referenced by particle\+::get\+\_\+distance(), get\+\_\+distance\+\_\+2d(), particle\+::get\+\_\+time\+\_\+to\+\_\+collision(), and zderzenie().
+
+\mbox{\Hypertarget{ClassSiec_8h_a71b54469f61e2266d054d489957cf8cf}\label{ClassSiec_8h_a71b54469f61e2266d054d489957cf8cf}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!get\+\_\+distance\+\_\+2d@{get\+\_\+distance\+\_\+2d}}
+\index{get\+\_\+distance\+\_\+2d@{get\+\_\+distance\+\_\+2d}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+distance\+\_\+2d()}{get\_distance\_2d()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double get\+\_\+distance\+\_\+2d (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structparticle}{particle}} $\ast$}]{p0,  }\item[{\mbox{\hyperlink{structparticle}{particle}} $\ast$}]{p1,  }\item[{double}]{box\+\_\+x,  }\item[{double}]{box\+\_\+y }\end{DoxyParamCaption})}
+
+Calculate distance in 2D in box 
+\begin{DoxyParams}{Parameters}
+{\em p0} & \\
+\hline
+{\em p1} & \\
+\hline
+{\em box\+\_\+x} & \\
+\hline
+{\em box\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 246 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+distance\+\_\+1d(), and particle\+::pos.
+
+
+
+Referenced by Class\+Siec\+::get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{ClassSiec_8h_a71b54469f61e2266d054d489957cf8cf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ClassSiec_8h_ad2771c2f42d6323693918169e3e50e1d}\label{ClassSiec_8h_ad2771c2f42d6323693918169e3e50e1d}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!get\+\_\+distance\+\_\+2d@{get\+\_\+distance\+\_\+2d}}
+\index{get\+\_\+distance\+\_\+2d@{get\+\_\+distance\+\_\+2d}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+distance\+\_\+2d()}{get\_distance\_2d()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double get\+\_\+distance\+\_\+2d (\begin{DoxyParamCaption}\item[{double}]{x0,  }\item[{double}]{y0,  }\item[{double}]{x1,  }\item[{double}]{y1,  }\item[{double}]{box\+\_\+x,  }\item[{double}]{box\+\_\+y }\end{DoxyParamCaption})}
+
+Calculate distance in 2D in box 
+\begin{DoxyParams}{Parameters}
+{\em x0} & \\
+\hline
+{\em y0} & \\
+\hline
+{\em x1} & \\
+\hline
+{\em y1} & \\
+\hline
+{\em box\+\_\+x} & \\
+\hline
+{\em box\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 263 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+distance\+\_\+1d().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{ClassSiec_8h_ad2771c2f42d6323693918169e3e50e1d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ClassSiec_8h_ac09c4f66afc9dffbec912d9b227af15d}\label{ClassSiec_8h_ac09c4f66afc9dffbec912d9b227af15d}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!save\+\_\+to\+\_\+file@{save\+\_\+to\+\_\+file}}
+\index{save\+\_\+to\+\_\+file@{save\+\_\+to\+\_\+file}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{save\+\_\+to\+\_\+file()}{save\_to\_file()}}
+{\footnotesize\ttfamily int save\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{filename,  }\item[{std\+::string}]{data }\end{DoxyParamCaption})}
+
+Save to file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1497 of file Class\+Siec.\+cpp.
+
+
+
+References OK.
+
+\mbox{\Hypertarget{ClassSiec_8h_a39da542e109c5bbb6f026cbcc0706e6c}\label{ClassSiec_8h_a39da542e109c5bbb6f026cbcc0706e6c}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!thread\+\_\+\+R\+DF@{thread\+\_\+\+R\+DF}}
+\index{thread\+\_\+\+R\+DF@{thread\+\_\+\+R\+DF}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{thread\+\_\+\+R\+D\+F()}{thread\_RDF()}}
+{\footnotesize\ttfamily void thread\+\_\+\+R\+DF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$}]{siec,  }\item[{uint64\+\_\+t}]{c1,  }\item[{double}]{prec }\end{DoxyParamCaption})}
+
+Thread for R\+DF 
+\begin{DoxyParams}{Parameters}
+{\em siec} & \\
+\hline
+{\em c1} & \\
+\hline
+{\em prec} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1748 of file Class\+Siec.\+cpp.
+
+
+
+References Class\+Siec\+::current\+\_\+\+R\+DF, Class\+Siec\+::get\+\_\+density(), Class\+Siec\+::get\+\_\+min\+\_\+radius(), Class\+Siec\+::get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius(), Class\+Siec\+::get\+\_\+particles\+\_\+len(), and Class\+Siec\+::particles.
+
+
+
+Referenced by Class\+Siec\+::save\+\_\+\+R\+D\+F(), and Class\+Siec\+::save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ClassSiec_8h_a39da542e109c5bbb6f026cbcc0706e6c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{ClassSiec_8h_a83865b3eba7be6cb9dcc6a8f5774cbb0}\label{ClassSiec_8h_a83865b3eba7be6cb9dcc6a8f5774cbb0}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!zderzenie@{zderzenie}}
+\index{zderzenie@{zderzenie}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{zderzenie()}{zderzenie()}}
+{\footnotesize\ttfamily int zderzenie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structparticle}{particle}} $\ast$}]{cz0,  }\item[{\mbox{\hyperlink{structparticle}{particle}} $\ast$}]{cz1,  }\item[{double}]{box\+\_\+x,  }\item[{double}]{box\+\_\+y }\end{DoxyParamCaption})}
+
+Make collision of particles 
+\begin{DoxyParams}{Parameters}
+{\em cz0} & \\
+\hline
+{\em cz1} & \\
+\hline
+{\em box\+\_\+x} & \\
+\hline
+{\em box\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1101 of file Class\+Siec.\+cpp.
+
+
+
+References particle\+::color, particle\+::get\+\_\+distance(), get\+\_\+distance\+\_\+1d(), particle\+::m, OK, particle\+::pos, particle\+::tlc, and particle\+::vel.
+
+
+
+Referenced by Class\+Siec\+::step\+\_\+all().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ClassSiec_8h_a83865b3eba7be6cb9dcc6a8f5774cbb0_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{ClassSiec_8h_a4e4badfc84da510ffa9a52e97c1fe6e4}\label{ClassSiec_8h_a4e4badfc84da510ffa9a52e97c1fe6e4}} 
+\index{Class\+Siec.\+h@{Class\+Siec.\+h}!k\+Boltzmann@{k\+Boltzmann}}
+\index{k\+Boltzmann@{k\+Boltzmann}!Class\+Siec.\+h@{Class\+Siec.\+h}}
+\subsubsection{\texorpdfstring{k\+Boltzmann}{kBoltzmann}}
+{\footnotesize\ttfamily const double k\+Boltzmann = 1.\+0}
+
+
+
+Definition at line 21 of file Class\+Siec.\+h.
+
+
+
+Referenced by Class\+Siec\+::get\+\_\+state\+\_\+space\+\_\+\+Boublik(), Class\+Siec\+::get\+\_\+state\+\_\+space\+\_\+\+Handerson(), Class\+Siec\+::get\+\_\+state\+\_\+space\+\_\+\+Solan(), and Class\+Siec\+::get\+\_\+temperature().
+

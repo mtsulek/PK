@@ -1,0 +1,274 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$allegro5/allegro.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+primitives.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+font.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro\+\_\+color.\+h$>$}\newline
+{\ttfamily \#include $<$allegro5/allegro5.\+h$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Class\+Siec.\+h\char`\"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{main_8cpp_ac51862e2cdf2f570d5c330d6ace2ff85}{find\+\_\+max}} (vector$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{main_8cpp_a0a23711d23c9a45599f6b45c55d18359}{find\+\_\+min}} (vector$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{main_8cpp_ad7393aefedd4f1a5dbaed3ab8877604c}{find\+\_\+max\+\_\+ignore\+\_\+inf}} (vector$<$ T $>$ \&data)
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{main_8cpp_abccee6ba77e6cc54d4b7240afea972a4}{find\+\_\+min\+\_\+ignore\+\_\+inf}} (vector$<$ T $>$ \&data)
+\item 
+void \mbox{\hyperlink{main_8cpp_af5fa2a2340488622a24a2cbc8d19d494}{thread\+\_\+siec}} (\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$siec, int $\ast$debug, int $\ast$th\+\_\+run, double $\ast$stability\+\_\+time, double $\ast$stability\+\_\+time\+\_\+full, std\+::string $\ast$info\+\_\+text)
+\item 
+void \mbox{\hyperlink{main_8cpp_ae31c6c0c1d721bdf5ad653e6a15c765e}{pend\+\_\+event}} (\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$siec, int $\ast$th\+\_\+run, bool $\ast$redraw, A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$event\+\_\+queue, A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+NT $\ast$ev)
+\item 
+void \mbox{\hyperlink{main_8cpp_a195bfbec09c0e6ce003ced9eee0e3660}{thread\+\_\+draw}} (\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$siec, int $\ast$th\+\_\+run, bool $\ast$redraw, A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$display, A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$bitmap\+\_\+box, A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$bitmap\+\_\+\+R\+DF, std\+::string $\ast$info, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font, double windowy)
+\item 
+int \mbox{\hyperlink{main_8cpp_a5b9b0f154da6100c80e026a71597f82b}{draw\+\_\+\+R\+DF}} (\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$siec, A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$bitmap, std\+::string info, A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$font)
+\item 
+int \mbox{\hyperlink{main_8cpp_ad3bea8300ca8b957d97f583d2fe162f0}{draw\+\_\+all}} (\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$siec, A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$bitmap)
+\item 
+int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{main_8cpp_a7ce189ed778aa82eaf2d5aa53dfa9142}{licznik}} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ad3bea8300ca8b957d97f583d2fe162f0}\label{main_8cpp_ad3bea8300ca8b957d97f583d2fe162f0}} 
+\index{main.\+cpp@{main.\+cpp}!draw\+\_\+all@{draw\+\_\+all}}
+\index{draw\+\_\+all@{draw\+\_\+all}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+all()}{draw\_all()}}
+{\footnotesize\ttfamily int draw\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$}]{siec,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$}]{bitmap }\end{DoxyParamCaption})}
+
+Draw all particles 
+\begin{DoxyParams}{Parameters}
+{\em siec} & \\
+\hline
+{\em bitmap} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 293 of file main.\+cpp.
+
+
+
+References particle\+::color, E\+R\+R\+OR, Class\+Siec\+::get\+\_\+box\+\_\+x(), Class\+Siec\+::get\+\_\+box\+\_\+y(), Class\+Siec\+::get\+\_\+particles\+\_\+len(), OK, Class\+Siec\+::particles, particle\+::pos, particle\+::r, and particle\+::vel.
+
+
+
+Referenced by main(), and thread\+\_\+draw().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{main_8cpp_ad3bea8300ca8b957d97f583d2fe162f0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a5b9b0f154da6100c80e026a71597f82b}\label{main_8cpp_a5b9b0f154da6100c80e026a71597f82b}} 
+\index{main.\+cpp@{main.\+cpp}!draw\+\_\+\+R\+DF@{draw\+\_\+\+R\+DF}}
+\index{draw\+\_\+\+R\+DF@{draw\+\_\+\+R\+DF}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{draw\+\_\+\+R\+D\+F()}{draw\_RDF()}}
+{\footnotesize\ttfamily int draw\+\_\+\+R\+DF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$}]{siec,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$}]{bitmap,  }\item[{std\+::string}]{info,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font }\end{DoxyParamCaption})}
+
+Draw R\+DF below particles 
+\begin{DoxyParams}{Parameters}
+{\em siec} & \\
+\hline
+{\em bitmap} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 256 of file main.\+cpp.
+
+
+
+References Class\+Siec\+::current\+\_\+\+R\+DF, E\+R\+R\+OR, and OK.
+
+
+
+Referenced by thread\+\_\+draw().
+
+\mbox{\Hypertarget{main_8cpp_ac51862e2cdf2f570d5c330d6ace2ff85}\label{main_8cpp_ac51862e2cdf2f570d5c330d6ace2ff85}} 
+\index{main.\+cpp@{main.\+cpp}!find\+\_\+max@{find\+\_\+max}}
+\index{find\+\_\+max@{find\+\_\+max}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{find\+\_\+max()}{find\_max()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+max (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 330 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_ad7393aefedd4f1a5dbaed3ab8877604c}\label{main_8cpp_ad7393aefedd4f1a5dbaed3ab8877604c}} 
+\index{main.\+cpp@{main.\+cpp}!find\+\_\+max\+\_\+ignore\+\_\+inf@{find\+\_\+max\+\_\+ignore\+\_\+inf}}
+\index{find\+\_\+max\+\_\+ignore\+\_\+inf@{find\+\_\+max\+\_\+ignore\+\_\+inf}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{find\+\_\+max\+\_\+ignore\+\_\+inf()}{find\_max\_ignore\_inf()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+max\+\_\+ignore\+\_\+inf (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 343 of file main.\+cpp.
+
+
+
+Referenced by main().
+
+\mbox{\Hypertarget{main_8cpp_a0a23711d23c9a45599f6b45c55d18359}\label{main_8cpp_a0a23711d23c9a45599f6b45c55d18359}} 
+\index{main.\+cpp@{main.\+cpp}!find\+\_\+min@{find\+\_\+min}}
+\index{find\+\_\+min@{find\+\_\+min}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{find\+\_\+min()}{find\_min()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+min (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 389 of file main.\+cpp.
+
+\mbox{\Hypertarget{main_8cpp_abccee6ba77e6cc54d4b7240afea972a4}\label{main_8cpp_abccee6ba77e6cc54d4b7240afea972a4}} 
+\index{main.\+cpp@{main.\+cpp}!find\+\_\+min\+\_\+ignore\+\_\+inf@{find\+\_\+min\+\_\+ignore\+\_\+inf}}
+\index{find\+\_\+min\+\_\+ignore\+\_\+inf@{find\+\_\+min\+\_\+ignore\+\_\+inf}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{find\+\_\+min\+\_\+ignore\+\_\+inf()}{find\_min\_ignore\_inf()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T find\+\_\+min\+\_\+ignore\+\_\+inf (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Definition at line 366 of file main.\+cpp.
+
+
+
+Referenced by main().
+
+\mbox{\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 39 of file main.\+cpp.
+
+
+
+References Class\+Siec\+::close\+\_\+file(), Class\+Siec\+::create\+\_\+honeycomb(), draw\+\_\+all(), find\+\_\+max\+\_\+ignore\+\_\+inf(), find\+\_\+min\+\_\+ignore\+\_\+inf(), Class\+Siec\+::fix\+\_\+position(), Class\+Siec\+::flush\+\_\+file(), Class\+Siec\+::get\+\_\+min\+\_\+radius(), Class\+Siec\+::get\+\_\+static\+\_\+parameters\+\_\+info(), Class\+Siec\+::init(), Class\+Siec\+::insert\+\_\+to\+\_\+file(), licznik, pend\+\_\+event(), Class\+Siec\+::save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array(), Class\+Siec\+::set\+\_\+mass\+\_\+all(), Class\+Siec\+::set\+\_\+momentum\+\_\+to\+\_\+zero(), Class\+Siec\+::set\+\_\+particles\+\_\+zero\+\_\+time(), Class\+Siec\+::set\+\_\+random\+\_\+velocity(), Class\+Siec\+::step\+\_\+all(), thread\+\_\+draw(), and thread\+\_\+siec().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_ae31c6c0c1d721bdf5ad653e6a15c765e}\label{main_8cpp_ae31c6c0c1d721bdf5ad653e6a15c765e}} 
+\index{main.\+cpp@{main.\+cpp}!pend\+\_\+event@{pend\+\_\+event}}
+\index{pend\+\_\+event@{pend\+\_\+event}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{pend\+\_\+event()}{pend\_event()}}
+{\footnotesize\ttfamily void pend\+\_\+event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$}]{siec,  }\item[{int $\ast$}]{th\+\_\+run,  }\item[{bool $\ast$}]{redraw,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+N\+T\+\_\+\+Q\+U\+E\+UE $\ast$}]{event\+\_\+queue,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+E\+V\+E\+NT $\ast$}]{ev }\end{DoxyParamCaption})}
+
+
+
+Definition at line 207 of file main.\+cpp.
+
+
+
+Referenced by main().
+
+\mbox{\Hypertarget{main_8cpp_a195bfbec09c0e6ce003ced9eee0e3660}\label{main_8cpp_a195bfbec09c0e6ce003ced9eee0e3660}} 
+\index{main.\+cpp@{main.\+cpp}!thread\+\_\+draw@{thread\+\_\+draw}}
+\index{thread\+\_\+draw@{thread\+\_\+draw}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{thread\+\_\+draw()}{thread\_draw()}}
+{\footnotesize\ttfamily void thread\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$}]{siec,  }\item[{int $\ast$}]{th\+\_\+run,  }\item[{bool $\ast$}]{redraw,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+D\+I\+S\+P\+L\+AY $\ast$}]{display,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$}]{bitmap\+\_\+box,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+B\+I\+T\+M\+AP $\ast$}]{bitmap\+\_\+\+R\+DF,  }\item[{std\+::string $\ast$}]{info,  }\item[{A\+L\+L\+E\+G\+R\+O\+\_\+\+F\+O\+NT $\ast$}]{font,  }\item[{double}]{windowy }\end{DoxyParamCaption})}
+
+
+
+Definition at line 230 of file main.\+cpp.
+
+
+
+References draw\+\_\+all(), and draw\+\_\+\+R\+D\+F().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a195bfbec09c0e6ce003ced9eee0e3660_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_af5fa2a2340488622a24a2cbc8d19d494}\label{main_8cpp_af5fa2a2340488622a24a2cbc8d19d494}} 
+\index{main.\+cpp@{main.\+cpp}!thread\+\_\+siec@{thread\+\_\+siec}}
+\index{thread\+\_\+siec@{thread\+\_\+siec}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{thread\+\_\+siec()}{thread\_siec()}}
+{\footnotesize\ttfamily void thread\+\_\+siec (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClassSiec}{Class\+Siec}} $\ast$}]{siec,  }\item[{int $\ast$}]{debug,  }\item[{int $\ast$}]{th\+\_\+run,  }\item[{double $\ast$}]{stability\+\_\+time,  }\item[{double $\ast$}]{stability\+\_\+time\+\_\+full,  }\item[{std\+::string $\ast$}]{info\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Definition at line 171 of file main.\+cpp.
+
+
+
+References find\+\_\+is\+\_\+in\+\_\+range(), Class\+Siec\+::flush\+\_\+file(), Class\+Siec\+::get\+\_\+diffusitivity\+\_\+delta(), Class\+Siec\+::get\+\_\+time(), Class\+Siec\+::get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function(), Class\+Siec\+::get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta(), and Class\+Siec\+::step\+\_\+all().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_af5fa2a2340488622a24a2cbc8d19d494_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_a7ce189ed778aa82eaf2d5aa53dfa9142}\label{main_8cpp_a7ce189ed778aa82eaf2d5aa53dfa9142}} 
+\index{main.\+cpp@{main.\+cpp}!licznik@{licznik}}
+\index{licznik@{licznik}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{licznik}{licznik}}
+{\footnotesize\ttfamily uint64\+\_\+t licznik = 0}
+
+
+
+Definition at line 24 of file main.\+cpp.
+
+
+
+Referenced by main().
+

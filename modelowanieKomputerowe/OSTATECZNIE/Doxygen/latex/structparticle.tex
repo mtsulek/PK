@@ -1,0 +1,471 @@
+\hypertarget{structparticle}{}\section{particle Struct Reference}
+\label{structparticle}\index{particle@{particle}}
+
+
+{\ttfamily \#include $<$Class\+Siec.\+h$>$}
+
+
+
+Collaboration diagram for particle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{structparticle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structparticle_a747b2142fefd6da08d95d84b32d985c5}{particle}} (double x, double y, double \mbox{\hyperlink{structparticle_a9ba64d6fa0d4bda34688d54a05341b77}{r}}, double vx=0.\+0, double vy=0.\+0, double \mbox{\hyperlink{structparticle_a2ea1a35ec678df5cc776dfd6bd377fad}{max\+Velocity}}=0.\+0, uint64\+\_\+t \mbox{\hyperlink{structparticle_a055d478842e85c5f730fc75f16254852}{nr}}=0)
+\item 
+int \mbox{\hyperlink{structparticle_af0c523c22c7b51a1a932f5f3f30b24a3}{set\+\_\+mass}} (double \mbox{\hyperlink{structparticle_a4cb4f184e6cd2b5dc0dc555d14f265dd}{m}})
+\item 
+int \mbox{\hyperlink{structparticle_ad45d7067a63de0b6c6ce07723a8e7be2}{set\+\_\+r}} (double \mbox{\hyperlink{structparticle_a9ba64d6fa0d4bda34688d54a05341b77}{r}})
+\item 
+int \mbox{\hyperlink{structparticle_a1088eb89ce4d29bc645160b91ba328c3}{set\+\_\+pos}} (double x, double y)
+\item 
+int \mbox{\hyperlink{structparticle_aafcf36063e5b6b0719b7ee8377f3c880}{set\+\_\+vel}} (double vx, double vy)
+\item 
+int \mbox{\hyperlink{structparticle_a842a75343ebbcdcaf53e95f0f1286d9a}{set\+\_\+max\+Velocity}} (double \mbox{\hyperlink{structparticle_a2ea1a35ec678df5cc776dfd6bd377fad}{max\+Velocity}})
+\item 
+int \mbox{\hyperlink{structparticle_a4f06bd4316643ca9ba721a4f768763a6}{step}} (double dt=1.\+0)
+\item 
+double \mbox{\hyperlink{structparticle_ab28d2ff9718bfa0fb801275d90f36a9d}{get\+\_\+distance}} (\mbox{\hyperlink{structparticle}{particle}} $\ast$to\+\_\+particle, double box\+\_\+x=0.\+0, double box\+\_\+y=0.\+0)
+\item 
+double \mbox{\hyperlink{structparticle_a8ca7119317b6176296ba0e4a0734ee33}{get\+\_\+velocity}} (void)
+\item 
+double \mbox{\hyperlink{structparticle_a8075edc35cef018e8d5fabcce3bc099e}{get\+\_\+time\+\_\+to\+\_\+collision}} (\mbox{\hyperlink{structparticle}{particle}} $\ast$to\+\_\+particle, double box\+\_\+x=0.\+0, double box\+\_\+y=0.\+0)
+\item 
+std\+::string \mbox{\hyperlink{structparticle_a74457d580da5637e77c1d72ba7a31bb5}{get\+\_\+info}} (void)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{structparticle_a9ba2ff9e556c82ec96f56ce659c1ad50}{pos}} \mbox{[}2\mbox{]}
+\item 
+double \mbox{\hyperlink{structparticle_abd12470a54dcbf5694c6adeb8c06ef8b}{vel}} \mbox{[}2\mbox{]}
+\item 
+double \mbox{\hyperlink{structparticle_a2ea1a35ec678df5cc776dfd6bd377fad}{max\+Velocity}}
+\item 
+double \mbox{\hyperlink{structparticle_a9ba64d6fa0d4bda34688d54a05341b77}{r}}
+\item 
+double \mbox{\hyperlink{structparticle_a4cb4f184e6cd2b5dc0dc555d14f265dd}{m}}
+\item 
+double \mbox{\hyperlink{structparticle_a5225483b35b28edcf29be553a367a952}{t}}
+\item 
+double \mbox{\hyperlink{structparticle_a5ab99949ec29f5623413672b923ffa25}{tlc}}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{structparticle_a055d478842e85c5f730fc75f16254852}{nr}}
+\item 
+A\+L\+L\+E\+G\+R\+O\+\_\+\+C\+O\+L\+OR \mbox{\hyperlink{structparticle_a7ea0e8707e7e91c3f298c5881bce4581}{color}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 38 of file Class\+Siec.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structparticle_a747b2142fefd6da08d95d84b32d985c5}\label{structparticle_a747b2142fefd6da08d95d84b32d985c5}} 
+\index{particle@{particle}!particle@{particle}}
+\index{particle@{particle}!particle@{particle}}
+\subsubsection{\texorpdfstring{particle()}{particle()}}
+{\footnotesize\ttfamily particle\+::particle (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{r,  }\item[{double}]{vx = {\ttfamily 0.0},  }\item[{double}]{vy = {\ttfamily 0.0},  }\item[{double}]{max\+Velocity = {\ttfamily 0.0},  }\item[{uint64\+\_\+t}]{nr = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 113 of file Class\+Siec.\+cpp.
+
+
+
+References color, m, max\+Velocity, nr, pos, r, t, tlc, and vel.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structparticle_ab28d2ff9718bfa0fb801275d90f36a9d}\label{structparticle_ab28d2ff9718bfa0fb801275d90f36a9d}} 
+\index{particle@{particle}!get\+\_\+distance@{get\+\_\+distance}}
+\index{get\+\_\+distance@{get\+\_\+distance}!particle@{particle}}
+\subsubsection{\texorpdfstring{get\+\_\+distance()}{get\_distance()}}
+{\footnotesize\ttfamily double particle\+::get\+\_\+distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structparticle}{particle}} $\ast$}]{to\+\_\+particle,  }\item[{double}]{box\+\_\+x = {\ttfamily 0.0},  }\item[{double}]{box\+\_\+y = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Calculate distance in 2D to particle in box 
+\begin{DoxyParams}{Parameters}
+{\em to\+\_\+particle} & \\
+\hline
+{\em box\+\_\+x} & \\
+\hline
+{\em box\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 277 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+distance\+\_\+1d(), and pos.
+
+
+
+Referenced by Class\+Siec\+::get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius(), get\+\_\+time\+\_\+to\+\_\+collision(), and zderzenie().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{structparticle_ab28d2ff9718bfa0fb801275d90f36a9d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structparticle_a74457d580da5637e77c1d72ba7a31bb5}\label{structparticle_a74457d580da5637e77c1d72ba7a31bb5}} 
+\index{particle@{particle}!get\+\_\+info@{get\+\_\+info}}
+\index{get\+\_\+info@{get\+\_\+info}!particle@{particle}}
+\subsubsection{\texorpdfstring{get\+\_\+info()}{get\_info()}}
+{\footnotesize\ttfamily std\+::string particle\+::get\+\_\+info (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Return info of particle \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 335 of file Class\+Siec.\+cpp.
+
+
+
+References nr, pos, t, and vel.
+
+\mbox{\Hypertarget{structparticle_a8075edc35cef018e8d5fabcce3bc099e}\label{structparticle_a8075edc35cef018e8d5fabcce3bc099e}} 
+\index{particle@{particle}!get\+\_\+time\+\_\+to\+\_\+collision@{get\+\_\+time\+\_\+to\+\_\+collision}}
+\index{get\+\_\+time\+\_\+to\+\_\+collision@{get\+\_\+time\+\_\+to\+\_\+collision}!particle@{particle}}
+\subsubsection{\texorpdfstring{get\+\_\+time\+\_\+to\+\_\+collision()}{get\_time\_to\_collision()}}
+{\footnotesize\ttfamily double particle\+::get\+\_\+time\+\_\+to\+\_\+collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structparticle}{particle}} $\ast$}]{to\+\_\+particle,  }\item[{double}]{box\+\_\+x = {\ttfamily 0.0},  }\item[{double}]{box\+\_\+y = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Calculate time to colision with particle 
+\begin{DoxyParams}{Parameters}
+{\em to\+\_\+particle} & \\
+\hline
+{\em box\+\_\+x} & \\
+\hline
+{\em box\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 301 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+distance(), get\+\_\+distance\+\_\+1d(), pos, r, and vel.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structparticle_a8075edc35cef018e8d5fabcce3bc099e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{structparticle_a8ca7119317b6176296ba0e4a0734ee33}\label{structparticle_a8ca7119317b6176296ba0e4a0734ee33}} 
+\index{particle@{particle}!get\+\_\+velocity@{get\+\_\+velocity}}
+\index{get\+\_\+velocity@{get\+\_\+velocity}!particle@{particle}}
+\subsubsection{\texorpdfstring{get\+\_\+velocity()}{get\_velocity()}}
+{\footnotesize\ttfamily double particle\+::get\+\_\+velocity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Calculate velocity \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 289 of file Class\+Siec.\+cpp.
+
+
+
+References vel.
+
+
+
+Referenced by Class\+Siec\+::step\+\_\+all().
+
+\mbox{\Hypertarget{structparticle_af0c523c22c7b51a1a932f5f3f30b24a3}\label{structparticle_af0c523c22c7b51a1a932f5f3f30b24a3}} 
+\index{particle@{particle}!set\+\_\+mass@{set\+\_\+mass}}
+\index{set\+\_\+mass@{set\+\_\+mass}!particle@{particle}}
+\subsubsection{\texorpdfstring{set\+\_\+mass()}{set\_mass()}}
+{\footnotesize\ttfamily int particle\+::set\+\_\+mass (\begin{DoxyParamCaption}\item[{double}]{m }\end{DoxyParamCaption})}
+
+Set mass of particle 
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 134 of file Class\+Siec.\+cpp.
+
+
+
+References m, and OK.
+
+\mbox{\Hypertarget{structparticle_a842a75343ebbcdcaf53e95f0f1286d9a}\label{structparticle_a842a75343ebbcdcaf53e95f0f1286d9a}} 
+\index{particle@{particle}!set\+\_\+max\+Velocity@{set\+\_\+max\+Velocity}}
+\index{set\+\_\+max\+Velocity@{set\+\_\+max\+Velocity}!particle@{particle}}
+\subsubsection{\texorpdfstring{set\+\_\+max\+Velocity()}{set\_maxVelocity()}}
+{\footnotesize\ttfamily int particle\+::set\+\_\+max\+Velocity (\begin{DoxyParamCaption}\item[{double}]{max\+Velocity }\end{DoxyParamCaption})}
+
+Set max velocity of particle 
+\begin{DoxyParams}{Parameters}
+{\em max\+Velocity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000001}{Bug}}]probably not useful \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 184 of file Class\+Siec.\+cpp.
+
+
+
+References max\+Velocity, and OK.
+
+\mbox{\Hypertarget{structparticle_a1088eb89ce4d29bc645160b91ba328c3}\label{structparticle_a1088eb89ce4d29bc645160b91ba328c3}} 
+\index{particle@{particle}!set\+\_\+pos@{set\+\_\+pos}}
+\index{set\+\_\+pos@{set\+\_\+pos}!particle@{particle}}
+\subsubsection{\texorpdfstring{set\+\_\+pos()}{set\_pos()}}
+{\footnotesize\ttfamily int particle\+::set\+\_\+pos (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+Set position of particle 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 157 of file Class\+Siec.\+cpp.
+
+
+
+References OK, and pos.
+
+\mbox{\Hypertarget{structparticle_ad45d7067a63de0b6c6ce07723a8e7be2}\label{structparticle_ad45d7067a63de0b6c6ce07723a8e7be2}} 
+\index{particle@{particle}!set\+\_\+r@{set\+\_\+r}}
+\index{set\+\_\+r@{set\+\_\+r}!particle@{particle}}
+\subsubsection{\texorpdfstring{set\+\_\+r()}{set\_r()}}
+{\footnotesize\ttfamily int particle\+::set\+\_\+r (\begin{DoxyParamCaption}\item[{double}]{r }\end{DoxyParamCaption})}
+
+Set radius of particle 
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 145 of file Class\+Siec.\+cpp.
+
+
+
+References OK, and r.
+
+\mbox{\Hypertarget{structparticle_aafcf36063e5b6b0719b7ee8377f3c880}\label{structparticle_aafcf36063e5b6b0719b7ee8377f3c880}} 
+\index{particle@{particle}!set\+\_\+vel@{set\+\_\+vel}}
+\index{set\+\_\+vel@{set\+\_\+vel}!particle@{particle}}
+\subsubsection{\texorpdfstring{set\+\_\+vel()}{set\_vel()}}
+{\footnotesize\ttfamily int particle\+::set\+\_\+vel (\begin{DoxyParamCaption}\item[{double}]{vx,  }\item[{double}]{vy }\end{DoxyParamCaption})}
+
+Set velocity of particle 
+\begin{DoxyParams}{Parameters}
+{\em vx} & \\
+\hline
+{\em vy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 170 of file Class\+Siec.\+cpp.
+
+
+
+References OK, and vel.
+
+\mbox{\Hypertarget{structparticle_a4f06bd4316643ca9ba721a4f768763a6}\label{structparticle_a4f06bd4316643ca9ba721a4f768763a6}} 
+\index{particle@{particle}!step@{step}}
+\index{step@{step}!particle@{particle}}
+\subsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily int particle\+::step (\begin{DoxyParamCaption}\item[{double}]{dt = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+Set step dt 
+\begin{DoxyParams}{Parameters}
+{\em dt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000002}{Bug}}]not useful \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 196 of file Class\+Siec.\+cpp.
+
+
+
+References OK, pos, t, and vel.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structparticle_a7ea0e8707e7e91c3f298c5881bce4581}\label{structparticle_a7ea0e8707e7e91c3f298c5881bce4581}} 
+\index{particle@{particle}!color@{color}}
+\index{color@{color}!particle@{particle}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily A\+L\+L\+E\+G\+R\+O\+\_\+\+C\+O\+L\+OR particle\+::color}
+
+
+
+Definition at line 50 of file Class\+Siec.\+h.
+
+
+
+Referenced by draw\+\_\+all(), particle(), Class\+Siec\+::step\+\_\+all(), and zderzenie().
+
+\mbox{\Hypertarget{structparticle_a4cb4f184e6cd2b5dc0dc555d14f265dd}\label{structparticle_a4cb4f184e6cd2b5dc0dc555d14f265dd}} 
+\index{particle@{particle}!m@{m}}
+\index{m@{m}!particle@{particle}}
+\subsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily double particle\+::m}
+
+
+
+Definition at line 46 of file Class\+Siec.\+h.
+
+
+
+Referenced by particle(), particle\+\_\+zero\+\_\+time\+::particle\+\_\+zero\+\_\+time(), set\+\_\+mass(), and zderzenie().
+
+\mbox{\Hypertarget{structparticle_a2ea1a35ec678df5cc776dfd6bd377fad}\label{structparticle_a2ea1a35ec678df5cc776dfd6bd377fad}} 
+\index{particle@{particle}!max\+Velocity@{max\+Velocity}}
+\index{max\+Velocity@{max\+Velocity}!particle@{particle}}
+\subsubsection{\texorpdfstring{max\+Velocity}{maxVelocity}}
+{\footnotesize\ttfamily double particle\+::max\+Velocity}
+
+
+
+Definition at line 44 of file Class\+Siec.\+h.
+
+
+
+Referenced by particle(), particle\+\_\+zero\+\_\+time\+::particle\+\_\+zero\+\_\+time(), and set\+\_\+max\+Velocity().
+
+\mbox{\Hypertarget{structparticle_a055d478842e85c5f730fc75f16254852}\label{structparticle_a055d478842e85c5f730fc75f16254852}} 
+\index{particle@{particle}!nr@{nr}}
+\index{nr@{nr}!particle@{particle}}
+\subsubsection{\texorpdfstring{nr}{nr}}
+{\footnotesize\ttfamily uint64\+\_\+t particle\+::nr}
+
+
+
+Definition at line 49 of file Class\+Siec.\+h.
+
+
+
+Referenced by get\+\_\+info(), particle(), and particle\+\_\+zero\+\_\+time\+::particle\+\_\+zero\+\_\+time().
+
+\mbox{\Hypertarget{structparticle_a9ba2ff9e556c82ec96f56ce659c1ad50}\label{structparticle_a9ba2ff9e556c82ec96f56ce659c1ad50}} 
+\index{particle@{particle}!pos@{pos}}
+\index{pos@{pos}!particle@{particle}}
+\subsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily double particle\+::pos\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 42 of file Class\+Siec.\+h.
+
+
+
+Referenced by draw\+\_\+all(), get\+\_\+distance(), get\+\_\+distance\+\_\+2d(), get\+\_\+info(), get\+\_\+time\+\_\+to\+\_\+collision(), particle(), particle\+\_\+zero\+\_\+time\+::particle\+\_\+zero\+\_\+time(), set\+\_\+pos(), step(), Class\+Siec\+::step\+\_\+all(), th\+\_\+to\+\_\+box(), and zderzenie().
+
+\mbox{\Hypertarget{structparticle_a9ba64d6fa0d4bda34688d54a05341b77}\label{structparticle_a9ba64d6fa0d4bda34688d54a05341b77}} 
+\index{particle@{particle}!r@{r}}
+\index{r@{r}!particle@{particle}}
+\subsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily double particle\+::r}
+
+
+
+Definition at line 45 of file Class\+Siec.\+h.
+
+
+
+Referenced by draw\+\_\+all(), get\+\_\+time\+\_\+to\+\_\+collision(), particle(), particle\+\_\+zero\+\_\+time\+::particle\+\_\+zero\+\_\+time(), and set\+\_\+r().
+
+\mbox{\Hypertarget{structparticle_a5225483b35b28edcf29be553a367a952}\label{structparticle_a5225483b35b28edcf29be553a367a952}} 
+\index{particle@{particle}!t@{t}}
+\index{t@{t}!particle@{particle}}
+\subsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily double particle\+::t}
+
+
+
+Definition at line 47 of file Class\+Siec.\+h.
+
+
+
+Referenced by get\+\_\+info(), particle(), step(), and Class\+Siec\+::step\+\_\+all().
+
+\mbox{\Hypertarget{structparticle_a5ab99949ec29f5623413672b923ffa25}\label{structparticle_a5ab99949ec29f5623413672b923ffa25}} 
+\index{particle@{particle}!tlc@{tlc}}
+\index{tlc@{tlc}!particle@{particle}}
+\subsubsection{\texorpdfstring{tlc}{tlc}}
+{\footnotesize\ttfamily double particle\+::tlc}
+
+
+
+Definition at line 48 of file Class\+Siec.\+h.
+
+
+
+Referenced by particle(), and zderzenie().
+
+\mbox{\Hypertarget{structparticle_abd12470a54dcbf5694c6adeb8c06ef8b}\label{structparticle_abd12470a54dcbf5694c6adeb8c06ef8b}} 
+\index{particle@{particle}!vel@{vel}}
+\index{vel@{vel}!particle@{particle}}
+\subsubsection{\texorpdfstring{vel}{vel}}
+{\footnotesize\ttfamily double particle\+::vel\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 43 of file Class\+Siec.\+h.
+
+
+
+Referenced by draw\+\_\+all(), get\+\_\+info(), get\+\_\+time\+\_\+to\+\_\+collision(), get\+\_\+velocity(), particle(), particle\+\_\+zero\+\_\+time\+::particle\+\_\+zero\+\_\+time(), set\+\_\+vel(), step(), Class\+Siec\+::step\+\_\+all(), and zderzenie().
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ClassSiec_8h}{Class\+Siec.\+h}}\item 
+\mbox{\hyperlink{ClassSiec_8cpp}{Class\+Siec.\+cpp}}\end{DoxyCompactItemize}

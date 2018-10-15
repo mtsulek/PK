@@ -1,0 +1,2037 @@
+\hypertarget{classClassSiec}{}\section{Class\+Siec Class Reference}
+\label{classClassSiec}\index{Class\+Siec@{Class\+Siec}}
+
+
+{\ttfamily \#include $<$Class\+Siec.\+h$>$}
+
+
+
+Collaboration diagram for Class\+Siec\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classClassSiec__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClassSiec_ae87ded45ef76f08bf3116f3a933126a1}{Class\+Siec}} (void)
+\item 
+\mbox{\hyperlink{classClassSiec_a3a1c1350b50c564e85ff7371bff71777}{Class\+Siec}} (double dt, double \mbox{\hyperlink{classClassSiec_a8ebc9e2a0a8f7ccf4736482aa2a5f673}{box\+\_\+x}}=800.\+0, double \mbox{\hyperlink{classClassSiec_a51b98a4d58f22b84e410eaf2c7b31c4b}{box\+\_\+y}}=600.\+0)
+\item 
+virtual \mbox{\hyperlink{classClassSiec_a0a4837ae00000cb4bc7a1f0deca000b5}{$\sim$\+Class\+Siec}} (void)
+\item 
+int \mbox{\hyperlink{classClassSiec_a6f31c5bea93923e8a83e810a1443e9d7}{add\+\_\+particle}} (double x, double y, double r, double vx=0.\+0, double vy=0.\+0, double max\+Velocity=0.\+0)
+\item 
+int \mbox{\hyperlink{classClassSiec_a4b34a96c2302a69832378955e515349c}{create\+\_\+square}} (double a, double r)
+\item 
+int \mbox{\hyperlink{classClassSiec_a67d2e9b6ac5a7031d153336071fe0b1a}{create\+\_\+honeycomb}} (double a, double r)
+\item 
+int \mbox{\hyperlink{classClassSiec_a293f258a3a45122d0d59bd6b827f0442}{create\+\_\+honeycomb}} (double a, double r, double density, double precision=0.\+01)
+\item 
+int \mbox{\hyperlink{classClassSiec_af9d21e3ef4441737d3c64271c5752532}{create\+\_\+hexagonal}} (double a, double r)
+\item 
+int \mbox{\hyperlink{classClassSiec_a89393fb8f724ede8d628e46018e692a3}{create\+\_\+hexagonal}} (double a, double r, double density, double precision)
+\item 
+int \mbox{\hyperlink{classClassSiec_a29968ccc2e9318ca89ae0b3dac4a390d}{set\+\_\+random\+\_\+velocity}} (double multiplier=1.\+0)
+\item 
+int \mbox{\hyperlink{classClassSiec_a4b63c475330f7b0c96a244f55a624fac}{set\+\_\+random\+\_\+size}} (double min, double max)
+\item 
+int \mbox{\hyperlink{classClassSiec_a361b139e9734e15599847d2060d85d6b}{set\+\_\+mass\+\_\+to\+\_\+radius}} (double ratio=1.\+0)
+\item 
+int \mbox{\hyperlink{classClassSiec_aa2eff85fe7fc842b2d0631118d533154}{set\+\_\+mass\+\_\+to\+\_\+area}} (double ratio=1.\+0)
+\item 
+int \mbox{\hyperlink{classClassSiec_a2adaa0e7fe44a2a68b7eba11c52d21bd}{set\+\_\+mass\+\_\+all}} (double mass=1.\+0)
+\item 
+int \mbox{\hyperlink{classClassSiec_ab2a445e522e2d8c59177fd28c074c1c1}{set\+\_\+momentum\+\_\+to\+\_\+zero}} (double Ekpoz\+\_\+t, double precision=0.\+001)
+\item 
+int \mbox{\hyperlink{classClassSiec_a37811fccdbeb4119061a02cfb9386677}{set\+\_\+particles\+\_\+zero\+\_\+time}} (void)
+\item 
+int \mbox{\hyperlink{classClassSiec_a2ef8ae6a08683c8ed1c4e9d89b79e08e}{set\+\_\+dt}} (double dt)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classClassSiec_a5fa315d36ce3648e5e5c2bf66b744e18}{get\+\_\+particles\+\_\+len}} (void)
+\item 
+int \mbox{\hyperlink{classClassSiec_aa4c36868471f5747008cea881f1038c1}{get\+\_\+particle}} (uint64\+\_\+t nr, \mbox{\hyperlink{structparticle}{particle}} $\ast$here)
+\item 
+\mbox{\hyperlink{structs__pair}{s\+\_\+pair}} \mbox{\hyperlink{classClassSiec_a1f8a44832453567a2eeed85fe038ca01}{get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number}} (void)
+\item 
+double \mbox{\hyperlink{classClassSiec_a654072dec38aee93903bdce321890a80}{get\+\_\+next\+\_\+collision\+\_\+particles}} (vector$<$ \mbox{\hyperlink{structs__pair}{s\+\_\+pair}} $>$ $\ast$ptr)
+\item 
+float \mbox{\hyperlink{classClassSiec_a27ab9475c3e1da5cba2c8dce28e12444}{get\+\_\+time}} (void)
+\item 
+float \mbox{\hyperlink{classClassSiec_ae0e08ad933601148dcd2edc998c17a61}{get\+\_\+temperature}} (void)
+\item 
+float \mbox{\hyperlink{classClassSiec_a1ea898d8e6cb52ffc47e7490e48894e4}{get\+\_\+density}} (void)
+\item 
+float \mbox{\hyperlink{classClassSiec_aad61574e5a2c57c21f3404b7a60ee189}{get\+\_\+density\+\_\+real}} (void)
+\item 
+float \mbox{\hyperlink{classClassSiec_a1b7f3db9473b2660b3a6c1dfeee45e22}{get\+\_\+packing\+\_\+ratio}} (void)
+\item 
+double \mbox{\hyperlink{classClassSiec_ae5515f653846b695b3ab00682d15c6fc}{get\+\_\+kinetic\+\_\+energy}} (void)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classClassSiec_ac5f8e08337a1ef96531495a6aee8bfb9}{get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius}} (double r, double dr, \mbox{\hyperlink{structparticle}{particle}} $\ast$for\+\_\+particle)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classClassSiec_a0c89392852117a823a1a603f4181b3a7}{get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius}} (double r, double dr)
+\item 
+float \mbox{\hyperlink{classClassSiec_a1a3c05e29d9fb646f1733704db81933d}{get\+\_\+radial\+\_\+distribution\+\_\+function}} (double r, double dr, \mbox{\hyperlink{structparticle}{particle}} $\ast$for\+\_\+particle, uint64\+\_\+t prec=100)
+\item 
+float \mbox{\hyperlink{classClassSiec_a95685407da49bfa4d1a54fd248e8aee3}{get\+\_\+radial\+\_\+distribution\+\_\+function}} (double r, double dr)
+\item 
+float \mbox{\hyperlink{classClassSiec_a87284d96c487a462bf8a42d81fc4bb8c}{get\+\_\+radial\+\_\+distribution\+\_\+function\+\_\+theoretical}} (void)
+\item 
+float \mbox{\hyperlink{classClassSiec_a8fb2e1fa04229aaa6027fed8dd996aea}{get\+\_\+state\+\_\+space\+\_\+\+Boublik}} (void)
+\item 
+float \mbox{\hyperlink{classClassSiec_a36144a1734674d3f0c6899c348da1a97}{get\+\_\+state\+\_\+space\+\_\+\+Handerson}} (void)
+\item 
+float \mbox{\hyperlink{classClassSiec_a3a0171519c3557d8edec22edb5978c9c}{get\+\_\+state\+\_\+space\+\_\+\+Solan}} (void)
+\item 
+float \mbox{\hyperlink{classClassSiec_acffa9f63d7236490d4e214a59e443140}{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function}} (void)
+\item 
+float \mbox{\hyperlink{classClassSiec_a59f6ca8740aad85697541a0c9901d699}{get\+\_\+diffusivity}} (void)
+\item 
+double \mbox{\hyperlink{classClassSiec_a5d81d2e727712fbb0f6f596eee09f354}{get\+\_\+diffusitivity\+\_\+delta}} (void)
+\item 
+double \mbox{\hyperlink{classClassSiec_a21be4d09c7aa47a5d3f216509ad5feef}{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta}} (void)
+\item 
+double \mbox{\hyperlink{classClassSiec_ac410df30c33bfc1e1613390446e716db}{get\+\_\+diffusitivity\+\_\+delta\+\_\+ratio}} (void)
+\item 
+double \mbox{\hyperlink{classClassSiec_af6d6dbab3224e645c67e6c7dd2e02378}{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta\+\_\+ratio}} (void)
+\item 
+double \mbox{\hyperlink{classClassSiec_a44e57165a1c37b9f9073fa0334e2878d}{get\+\_\+box\+\_\+x}} (void)
+\item 
+double \mbox{\hyperlink{classClassSiec_a6670e040d5bd507051671b8bd856c7d0}{get\+\_\+box\+\_\+y}} (void)
+\item 
+double \mbox{\hyperlink{classClassSiec_ab17d2e44f433cb4aec5d965b158a60a1}{get\+\_\+min\+\_\+radius}} (void)
+\item 
+double \mbox{\hyperlink{classClassSiec_a078c088fe48696423cc5c6c429d45eab}{get\+\_\+max\+\_\+radius}} (void)
+\item 
+void \mbox{\hyperlink{classClassSiec_ab883e160c0a8878ce20b8a27fea9b65f}{convert\+\_\+to\+\_\+box}} (double $\ast$x, double $\ast$y)
+\item 
+std\+::string \mbox{\hyperlink{classClassSiec_a5228f0e683612ae0a947f77a2bb7d2c9}{get\+\_\+box\+\_\+info}} (std\+::string sep=\char`\"{}\textbackslash{})
+\item 
+std\+::string \mbox{\hyperlink{classClassSiec_a653414664f006ee8cbfb8d101c8e8e62}{get\+\_\+box\+\_\+info\+\_\+title}} (std\+::string sep=\char`\"{}\textbackslash{})
+\item 
+std\+::string \mbox{\hyperlink{classClassSiec_a1e4fd45f66e131050359072b706f7608}{get\+\_\+box\+\_\+info\+\_\+raw}} (std\+::string sep=\char`\"{}\textbackslash{})
+\item 
+std\+::string \mbox{\hyperlink{classClassSiec_a609cc786246741388e18ed50c0165388}{get\+\_\+\+R\+D\+F\+\_\+r}} (double r, double dr, uint64\+\_\+t prec=100, std\+::string sep=\char`\"{} \char`\"{})
+\item 
+std\+::string \mbox{\hyperlink{classClassSiec_aad7c55f1dfa1b5bca25fc39e0b509304}{get\+\_\+\+R\+D\+F\+\_\+r}} (uint64\+\_\+t prec=100, std\+::string sep=\char`\"{} \char`\"{})
+\item 
+std\+::string \mbox{\hyperlink{classClassSiec_aaf3b24bc73d268f151acdff6351214e0}{get\+\_\+static\+\_\+parameters\+\_\+info}} (std\+::string sep=\char`\"{}\textbackslash{})
+\item 
+std\+::string \mbox{\hyperlink{classClassSiec_a1fcb70fc39cb91fe5b5382c7911de316}{get\+\_\+static\+\_\+parameters\+\_\+title}} (std\+::string sep=\char`\"{}\textbackslash{})
+\item 
+std\+::string \mbox{\hyperlink{classClassSiec_abed8d28e81524a99ab325569db15bb36}{get\+\_\+static\+\_\+parameters\+\_\+raw}} (std\+::string sep=\char`\"{}\textbackslash{})
+\item 
+int \mbox{\hyperlink{classClassSiec_a984c7c1d77c9cf78b6254529088028a4}{save\+\_\+\+R\+DF}} (uint64\+\_\+t prec=100, std\+::string sep=\char`\"{} \char`\"{})
+\item 
+void \mbox{\hyperlink{classClassSiec_a9c96b5d39e27f8f2bdda6fd60113ceb6}{save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array}} (vector$<$ double $>$ $\ast$array, uint64\+\_\+t prec=100)
+\item 
+int \mbox{\hyperlink{classClassSiec_a4527492cd521a36e1bcad1cb38034784}{fix\+\_\+position}} (void)
+\item 
+int \mbox{\hyperlink{classClassSiec_a5c2c133544d66df25e8b13e6b710272e}{init}} (std\+::string filename)
+\item 
+int \mbox{\hyperlink{classClassSiec_ab49b9f6b28f5e3c319384f518042272a}{insert\+\_\+to\+\_\+file}} (std\+::string data)
+\item 
+int \mbox{\hyperlink{classClassSiec_aa6e0a35a8b5387e43ee4f518ee101d74}{flush\+\_\+file}} (void)
+\item 
+int \mbox{\hyperlink{classClassSiec_aa0f4586cbe65a86ba011772287a546a9}{close\+\_\+file}} (void)
+\item 
+int \mbox{\hyperlink{classClassSiec_a0de17762248441c53936ee7924776052}{step\+\_\+all}} (int debug=0)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{structparticle}{particle}} $>$ \mbox{\hyperlink{classClassSiec_aa1a11eee47b10c11930952f092110e94}{particles}}
+\item 
+vector$<$ \mbox{\hyperlink{structparticle__zero__time}{particle\+\_\+zero\+\_\+time}} $>$ \mbox{\hyperlink{classClassSiec_aa1096135e230dbae78ec05efc8a4725f}{particles\+\_\+zero\+\_\+time}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classClassSiec_aaa4641c3eb550d26c64a785729e8cd63}{current\+\_\+\+R\+DF}}
+\item 
+double \mbox{\hyperlink{classClassSiec_a98e9ee22a2e12ce6612d1ce6e785cda2}{distancex}}
+\item 
+double \mbox{\hyperlink{classClassSiec_a5c100f779c613f9c747b0b7a3f02f2d9}{distancey}}
+\item 
+double \mbox{\hyperlink{classClassSiec_a4593ac900fa92dd33f9b40010b35efb9}{distance}}
+\item 
+double \mbox{\hyperlink{classClassSiec_a8ebc9e2a0a8f7ccf4736482aa2a5f673}{box\+\_\+x}}
+\item 
+double \mbox{\hyperlink{classClassSiec_a51b98a4d58f22b84e410eaf2c7b31c4b}{box\+\_\+y}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 105 of file Class\+Siec.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classClassSiec_ae87ded45ef76f08bf3116f3a933126a1}\label{classClassSiec_ae87ded45ef76f08bf3116f3a933126a1}} 
+\index{Class\+Siec@{Class\+Siec}!Class\+Siec@{Class\+Siec}}
+\index{Class\+Siec@{Class\+Siec}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{Class\+Siec()}{ClassSiec()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Class\+Siec\+::\+Class\+Siec (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 354 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, and box\+\_\+y.
+
+\mbox{\Hypertarget{classClassSiec_a3a1c1350b50c564e85ff7371bff71777}\label{classClassSiec_a3a1c1350b50c564e85ff7371bff71777}} 
+\index{Class\+Siec@{Class\+Siec}!Class\+Siec@{Class\+Siec}}
+\index{Class\+Siec@{Class\+Siec}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{Class\+Siec()}{ClassSiec()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Class\+Siec\+::\+Class\+Siec (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{double}]{box\+\_\+x = {\ttfamily 800.0},  }\item[{double}]{box\+\_\+y = {\ttfamily 600.0} }\end{DoxyParamCaption})}
+
+Constructor \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]dt is deprecated \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & -\/$>$ deprecated \\
+\hline
+{\em box\+\_\+x} & \\
+\hline
+{\em box\+\_\+y} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 372 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, and box\+\_\+y.
+
+\mbox{\Hypertarget{classClassSiec_a0a4837ae00000cb4bc7a1f0deca000b5}\label{classClassSiec_a0a4837ae00000cb4bc7a1f0deca000b5}} 
+\index{Class\+Siec@{Class\+Siec}!````~Class\+Siec@{$\sim$\+Class\+Siec}}
+\index{````~Class\+Siec@{$\sim$\+Class\+Siec}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{$\sim$\+Class\+Siec()}{~ClassSiec()}}
+{\footnotesize\ttfamily Class\+Siec\+::$\sim$\+Class\+Siec (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Definition at line 383 of file Class\+Siec.\+cpp.
+
+
+
+References particles.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classClassSiec_a6f31c5bea93923e8a83e810a1443e9d7}\label{classClassSiec_a6f31c5bea93923e8a83e810a1443e9d7}} 
+\index{Class\+Siec@{Class\+Siec}!add\+\_\+particle@{add\+\_\+particle}}
+\index{add\+\_\+particle@{add\+\_\+particle}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{add\+\_\+particle()}{add\_particle()}}
+{\footnotesize\ttfamily int Class\+Siec\+::add\+\_\+particle (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{r,  }\item[{double}]{vx = {\ttfamily 0.0},  }\item[{double}]{vy = {\ttfamily 0.0},  }\item[{double}]{max\+Velocity = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Add particle to array \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]max\+Velocity is probably useless \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+{\em r} & \\
+\hline
+{\em vx} & \\
+\hline
+{\em vy} & \\
+\hline
+{\em max\+Velocity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 432 of file Class\+Siec.\+cpp.
+
+
+
+References OK, and particles.
+
+
+
+Referenced by create\+\_\+hexagonal(), create\+\_\+honeycomb(), and create\+\_\+square().
+
+\mbox{\Hypertarget{classClassSiec_aa0f4586cbe65a86ba011772287a546a9}\label{classClassSiec_aa0f4586cbe65a86ba011772287a546a9}} 
+\index{Class\+Siec@{Class\+Siec}!close\+\_\+file@{close\+\_\+file}}
+\index{close\+\_\+file@{close\+\_\+file}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{close\+\_\+file()}{close\_file()}}
+{\footnotesize\ttfamily int Class\+Siec\+::close\+\_\+file (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Flush and close file \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 990 of file Class\+Siec.\+cpp.
+
+
+
+References OK.
+
+
+
+Referenced by main().
+
+\mbox{\Hypertarget{classClassSiec_ab883e160c0a8878ce20b8a27fea9b65f}\label{classClassSiec_ab883e160c0a8878ce20b8a27fea9b65f}} 
+\index{Class\+Siec@{Class\+Siec}!convert\+\_\+to\+\_\+box@{convert\+\_\+to\+\_\+box}}
+\index{convert\+\_\+to\+\_\+box@{convert\+\_\+to\+\_\+box}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{convert\+\_\+to\+\_\+box()}{convert\_to\_box()}}
+{\footnotesize\ttfamily void Class\+Siec\+::convert\+\_\+to\+\_\+box (\begin{DoxyParamCaption}\item[{double $\ast$}]{x,  }\item[{double $\ast$}]{y }\end{DoxyParamCaption})}
+
+Set positions to box 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 405 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, and box\+\_\+y.
+
+\mbox{\Hypertarget{classClassSiec_af9d21e3ef4441737d3c64271c5752532}\label{classClassSiec_af9d21e3ef4441737d3c64271c5752532}} 
+\index{Class\+Siec@{Class\+Siec}!create\+\_\+hexagonal@{create\+\_\+hexagonal}}
+\index{create\+\_\+hexagonal@{create\+\_\+hexagonal}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{create\+\_\+hexagonal()}{create\_hexagonal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Class\+Siec\+::create\+\_\+hexagonal (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{r }\end{DoxyParamCaption})}
+
+Adds particles in the form of a hexagonal 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 632 of file Class\+Siec.\+cpp.
+
+
+
+References add\+\_\+particle(), box\+\_\+x, box\+\_\+y, and OK.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_af9d21e3ef4441737d3c64271c5752532_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a89393fb8f724ede8d628e46018e692a3}\label{classClassSiec_a89393fb8f724ede8d628e46018e692a3}} 
+\index{Class\+Siec@{Class\+Siec}!create\+\_\+hexagonal@{create\+\_\+hexagonal}}
+\index{create\+\_\+hexagonal@{create\+\_\+hexagonal}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{create\+\_\+hexagonal()}{create\_hexagonal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Class\+Siec\+::create\+\_\+hexagonal (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{r,  }\item[{double}]{density,  }\item[{double}]{precision }\end{DoxyParamCaption})}
+
+Generate hexagonal lattice with desired density 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em r} & \\
+\hline
+{\em density} & \\
+\hline
+{\em precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 576 of file Class\+Siec.\+cpp.
+
+
+
+References add\+\_\+particle(), box\+\_\+x, box\+\_\+y, find\+\_\+is\+\_\+in\+\_\+range(), get\+\_\+density\+\_\+real(), OK, and particles.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a89393fb8f724ede8d628e46018e692a3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a67d2e9b6ac5a7031d153336071fe0b1a}\label{classClassSiec_a67d2e9b6ac5a7031d153336071fe0b1a}} 
+\index{Class\+Siec@{Class\+Siec}!create\+\_\+honeycomb@{create\+\_\+honeycomb}}
+\index{create\+\_\+honeycomb@{create\+\_\+honeycomb}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{create\+\_\+honeycomb()}{create\_honeycomb()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Class\+Siec\+::create\+\_\+honeycomb (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{r }\end{DoxyParamCaption})}
+
+Adds particles in the form of a honeycomb 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 477 of file Class\+Siec.\+cpp.
+
+
+
+References add\+\_\+particle(), box\+\_\+x, box\+\_\+y, and OK.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a67d2e9b6ac5a7031d153336071fe0b1a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a293f258a3a45122d0d59bd6b827f0442}\label{classClassSiec_a293f258a3a45122d0d59bd6b827f0442}} 
+\index{Class\+Siec@{Class\+Siec}!create\+\_\+honeycomb@{create\+\_\+honeycomb}}
+\index{create\+\_\+honeycomb@{create\+\_\+honeycomb}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{create\+\_\+honeycomb()}{create\_honeycomb()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Class\+Siec\+::create\+\_\+honeycomb (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{r,  }\item[{double}]{density,  }\item[{double}]{precision = {\ttfamily 0.01} }\end{DoxyParamCaption})}
+
+Generate honeycomb lattice with desired density 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em r} & \\
+\hline
+{\em density} & \\
+\hline
+{\em precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 514 of file Class\+Siec.\+cpp.
+
+
+
+References add\+\_\+particle(), box\+\_\+x, box\+\_\+y, find\+\_\+is\+\_\+in\+\_\+range(), get\+\_\+density\+\_\+real(), OK, and particles.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a293f258a3a45122d0d59bd6b827f0442_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a4b34a96c2302a69832378955e515349c}\label{classClassSiec_a4b34a96c2302a69832378955e515349c}} 
+\index{Class\+Siec@{Class\+Siec}!create\+\_\+square@{create\+\_\+square}}
+\index{create\+\_\+square@{create\+\_\+square}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{create\+\_\+square()}{create\_square()}}
+{\footnotesize\ttfamily int Class\+Siec\+::create\+\_\+square (\begin{DoxyParamCaption}\item[{double}]{a,  }\item[{double}]{r }\end{DoxyParamCaption})}
+
+Adds particles in the form of a square 
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+{\em r} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 448 of file Class\+Siec.\+cpp.
+
+
+
+References add\+\_\+particle(), box\+\_\+x, box\+\_\+y, and OK.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a4b34a96c2302a69832378955e515349c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a4527492cd521a36e1bcad1cb38034784}\label{classClassSiec_a4527492cd521a36e1bcad1cb38034784}} 
+\index{Class\+Siec@{Class\+Siec}!fix\+\_\+position@{fix\+\_\+position}}
+\index{fix\+\_\+position@{fix\+\_\+position}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{fix\+\_\+position()}{fix\_position()}}
+{\footnotesize\ttfamily int Class\+Siec\+::fix\+\_\+position (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Repair positions of all particles to the box \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 936 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, box\+\_\+y, get\+\_\+particles\+\_\+len(), OK, particles, and th\+\_\+to\+\_\+box().
+
+
+
+Referenced by main(), and step\+\_\+all().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a4527492cd521a36e1bcad1cb38034784_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_aa6e0a35a8b5387e43ee4f518ee101d74}\label{classClassSiec_aa6e0a35a8b5387e43ee4f518ee101d74}} 
+\index{Class\+Siec@{Class\+Siec}!flush\+\_\+file@{flush\+\_\+file}}
+\index{flush\+\_\+file@{flush\+\_\+file}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{flush\+\_\+file()}{flush\_file()}}
+{\footnotesize\ttfamily int Class\+Siec\+::flush\+\_\+file (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 979 of file Class\+Siec.\+cpp.
+
+
+
+References OK.
+
+
+
+Referenced by main(), and thread\+\_\+siec().
+
+\mbox{\Hypertarget{classClassSiec_a5228f0e683612ae0a947f77a2bb7d2c9}\label{classClassSiec_a5228f0e683612ae0a947f77a2bb7d2c9}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+box\+\_\+info@{get\+\_\+box\+\_\+info}}
+\index{get\+\_\+box\+\_\+info@{get\+\_\+box\+\_\+info}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+box\+\_\+info()}{get\_box\_info()}}
+{\footnotesize\ttfamily std\+::string Class\+Siec\+::get\+\_\+box\+\_\+info (\begin{DoxyParamCaption}\item[{std\+::string}]{sep = {\ttfamily \char`\"{}\textbackslash{}t\char`\"{}} }\end{DoxyParamCaption})}
+
+Get box info -\/$>$ info for save in logs \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1511 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+diffusitivity\+\_\+delta(), get\+\_\+diffusivity(), get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function(), and get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta().
+
+
+
+Referenced by step\+\_\+all().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a5228f0e683612ae0a947f77a2bb7d2c9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a1e4fd45f66e131050359072b706f7608}\label{classClassSiec_a1e4fd45f66e131050359072b706f7608}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+box\+\_\+info\+\_\+raw@{get\+\_\+box\+\_\+info\+\_\+raw}}
+\index{get\+\_\+box\+\_\+info\+\_\+raw@{get\+\_\+box\+\_\+info\+\_\+raw}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+box\+\_\+info\+\_\+raw()}{get\_box\_info\_raw()}}
+{\footnotesize\ttfamily std\+::string Class\+Siec\+::get\+\_\+box\+\_\+info\+\_\+raw (\begin{DoxyParamCaption}\item[{std\+::string}]{sep = {\ttfamily \char`\"{}\textbackslash{}t\char`\"{}} }\end{DoxyParamCaption})}
+
+Get raw data of info 
+\begin{DoxyParams}{Parameters}
+{\em sep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1585 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+diffusitivity\+\_\+delta(), get\+\_\+diffusivity(), get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function(), and get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta().
+
+
+
+Referenced by step\+\_\+all().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a1e4fd45f66e131050359072b706f7608_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a653414664f006ee8cbfb8d101c8e8e62}\label{classClassSiec_a653414664f006ee8cbfb8d101c8e8e62}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+box\+\_\+info\+\_\+title@{get\+\_\+box\+\_\+info\+\_\+title}}
+\index{get\+\_\+box\+\_\+info\+\_\+title@{get\+\_\+box\+\_\+info\+\_\+title}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+box\+\_\+info\+\_\+title()}{get\_box\_info\_title()}}
+{\footnotesize\ttfamily std\+::string Class\+Siec\+::get\+\_\+box\+\_\+info\+\_\+title (\begin{DoxyParamCaption}\item[{std\+::string}]{sep = {\ttfamily \char`\"{}\textbackslash{}t\char`\"{}} }\end{DoxyParamCaption})}
+
+Return title of infos 
+\begin{DoxyParams}{Parameters}
+{\em sep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1548 of file Class\+Siec.\+cpp.
+
+
+
+Referenced by init().
+
+\mbox{\Hypertarget{classClassSiec_a44e57165a1c37b9f9073fa0334e2878d}\label{classClassSiec_a44e57165a1c37b9f9073fa0334e2878d}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+box\+\_\+x@{get\+\_\+box\+\_\+x}}
+\index{get\+\_\+box\+\_\+x@{get\+\_\+box\+\_\+x}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+box\+\_\+x()}{get\_box\_x()}}
+{\footnotesize\ttfamily double Class\+Siec\+::get\+\_\+box\+\_\+x (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1454 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x.
+
+
+
+Referenced by draw\+\_\+all().
+
+\mbox{\Hypertarget{classClassSiec_a6670e040d5bd507051671b8bd856c7d0}\label{classClassSiec_a6670e040d5bd507051671b8bd856c7d0}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+box\+\_\+y@{get\+\_\+box\+\_\+y}}
+\index{get\+\_\+box\+\_\+y@{get\+\_\+box\+\_\+y}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+box\+\_\+y()}{get\_box\_y()}}
+{\footnotesize\ttfamily double Class\+Siec\+::get\+\_\+box\+\_\+y (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1458 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+y.
+
+
+
+Referenced by draw\+\_\+all().
+
+\mbox{\Hypertarget{classClassSiec_a1ea898d8e6cb52ffc47e7490e48894e4}\label{classClassSiec_a1ea898d8e6cb52ffc47e7490e48894e4}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+density@{get\+\_\+density}}
+\index{get\+\_\+density@{get\+\_\+density}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+density()}{get\_density()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+density (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get density particles in box \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1161 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, box\+\_\+y, and get\+\_\+particles\+\_\+len().
+
+
+
+Referenced by get\+\_\+radial\+\_\+distribution\+\_\+function(), get\+\_\+\+R\+D\+F\+\_\+r(), get\+\_\+state\+\_\+space\+\_\+\+Boublik(), get\+\_\+state\+\_\+space\+\_\+\+Handerson(), get\+\_\+state\+\_\+space\+\_\+\+Solan(), get\+\_\+static\+\_\+parameters\+\_\+info(), get\+\_\+static\+\_\+parameters\+\_\+raw(), and thread\+\_\+\+R\+D\+F().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a1ea898d8e6cb52ffc47e7490e48894e4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_aad61574e5a2c57c21f3404b7a60ee189}\label{classClassSiec_aad61574e5a2c57c21f3404b7a60ee189}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+density\+\_\+real@{get\+\_\+density\+\_\+real}}
+\index{get\+\_\+density\+\_\+real@{get\+\_\+density\+\_\+real}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+density\+\_\+real()}{get\_density\_real()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+density\+\_\+real (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get density(real) particles in box \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1179 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, box\+\_\+y, get\+\_\+particles\+\_\+len(), and particles.
+
+
+
+Referenced by create\+\_\+hexagonal(), create\+\_\+honeycomb(), get\+\_\+static\+\_\+parameters\+\_\+info(), and get\+\_\+static\+\_\+parameters\+\_\+raw().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_aad61574e5a2c57c21f3404b7a60ee189_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a5d81d2e727712fbb0f6f596eee09f354}\label{classClassSiec_a5d81d2e727712fbb0f6f596eee09f354}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+diffusitivity\+\_\+delta@{get\+\_\+diffusitivity\+\_\+delta}}
+\index{get\+\_\+diffusitivity\+\_\+delta@{get\+\_\+diffusitivity\+\_\+delta}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+diffusitivity\+\_\+delta()}{get\_diffusitivity\_delta()}}
+{\footnotesize\ttfamily double Class\+Siec\+::get\+\_\+diffusitivity\+\_\+delta (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get diffusivity delta \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1426 of file Class\+Siec.\+cpp.
+
+
+
+References find\+\_\+delta().
+
+
+
+Referenced by get\+\_\+box\+\_\+info(), get\+\_\+box\+\_\+info\+\_\+raw(), get\+\_\+static\+\_\+parameters\+\_\+info(), get\+\_\+static\+\_\+parameters\+\_\+raw(), and thread\+\_\+siec().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classClassSiec_a5d81d2e727712fbb0f6f596eee09f354_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_ac410df30c33bfc1e1613390446e716db}\label{classClassSiec_ac410df30c33bfc1e1613390446e716db}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+diffusitivity\+\_\+delta\+\_\+ratio@{get\+\_\+diffusitivity\+\_\+delta\+\_\+ratio}}
+\index{get\+\_\+diffusitivity\+\_\+delta\+\_\+ratio@{get\+\_\+diffusitivity\+\_\+delta\+\_\+ratio}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+diffusitivity\+\_\+delta\+\_\+ratio()}{get\_diffusitivity\_delta\_ratio()}}
+{\footnotesize\ttfamily double Class\+Siec\+::get\+\_\+diffusitivity\+\_\+delta\+\_\+ratio (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get diffusivity delta ratio \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1440 of file Class\+Siec.\+cpp.
+
+
+
+References find\+\_\+delta(), and get\+\_\+diffusivity().
+
+
+
+Referenced by get\+\_\+static\+\_\+parameters\+\_\+info(), and get\+\_\+static\+\_\+parameters\+\_\+raw().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_ac410df30c33bfc1e1613390446e716db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a59f6ca8740aad85697541a0c9901d699}\label{classClassSiec_a59f6ca8740aad85697541a0c9901d699}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+diffusivity@{get\+\_\+diffusivity}}
+\index{get\+\_\+diffusivity@{get\+\_\+diffusivity}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+diffusivity()}{get\_diffusivity()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+diffusivity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get diffusivity \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1417 of file Class\+Siec.\+cpp.
+
+
+
+Referenced by get\+\_\+box\+\_\+info(), get\+\_\+box\+\_\+info\+\_\+raw(), get\+\_\+diffusitivity\+\_\+delta\+\_\+ratio(), get\+\_\+static\+\_\+parameters\+\_\+info(), and get\+\_\+static\+\_\+parameters\+\_\+raw().
+
+\mbox{\Hypertarget{classClassSiec_ae5515f653846b695b3ab00682d15c6fc}\label{classClassSiec_ae5515f653846b695b3ab00682d15c6fc}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+kinetic\+\_\+energy@{get\+\_\+kinetic\+\_\+energy}}
+\index{get\+\_\+kinetic\+\_\+energy@{get\+\_\+kinetic\+\_\+energy}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+kinetic\+\_\+energy()}{get\_kinetic\_energy()}}
+{\footnotesize\ttfamily double Class\+Siec\+::get\+\_\+kinetic\+\_\+energy (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get the kinetic energy of particles \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1217 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+particles\+\_\+len(), and particles.
+
+
+
+Referenced by set\+\_\+momentum\+\_\+to\+\_\+zero().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_ae5515f653846b695b3ab00682d15c6fc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a078c088fe48696423cc5c6c429d45eab}\label{classClassSiec_a078c088fe48696423cc5c6c429d45eab}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+max\+\_\+radius@{get\+\_\+max\+\_\+radius}}
+\index{get\+\_\+max\+\_\+radius@{get\+\_\+max\+\_\+radius}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+max\+\_\+radius()}{get\_max\_radius()}}
+{\footnotesize\ttfamily double Class\+Siec\+::get\+\_\+max\+\_\+radius (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1477 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+particles\+\_\+len(), and particles.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a078c088fe48696423cc5c6c429d45eab_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_ab17d2e44f433cb4aec5d965b158a60a1}\label{classClassSiec_ab17d2e44f433cb4aec5d965b158a60a1}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+min\+\_\+radius@{get\+\_\+min\+\_\+radius}}
+\index{get\+\_\+min\+\_\+radius@{get\+\_\+min\+\_\+radius}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+min\+\_\+radius()}{get\_min\_radius()}}
+{\footnotesize\ttfamily double Class\+Siec\+::get\+\_\+min\+\_\+radius (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1463 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+particles\+\_\+len(), and particles.
+
+
+
+Referenced by main(), step\+\_\+all(), and thread\+\_\+\+R\+D\+F().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_ab17d2e44f433cb4aec5d965b158a60a1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a1f8a44832453567a2eeed85fe038ca01}\label{classClassSiec_a1f8a44832453567a2eeed85fe038ca01}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number@{get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number}}
+\index{get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number@{get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number()}{get\_next\_collision\_particle\_number()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structs__pair}{s\+\_\+pair}} Class\+Siec\+::get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Return pair of next collision \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 861 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, box\+\_\+y, get\+\_\+particles\+\_\+len(), and particles.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a1f8a44832453567a2eeed85fe038ca01_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a654072dec38aee93903bdce321890a80}\label{classClassSiec_a654072dec38aee93903bdce321890a80}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+next\+\_\+collision\+\_\+particles@{get\+\_\+next\+\_\+collision\+\_\+particles}}
+\index{get\+\_\+next\+\_\+collision\+\_\+particles@{get\+\_\+next\+\_\+collision\+\_\+particles}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+next\+\_\+collision\+\_\+particles()}{get\_next\_collision\_particles()}}
+{\footnotesize\ttfamily double Class\+Siec\+::get\+\_\+next\+\_\+collision\+\_\+particles (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structs__pair}{s\+\_\+pair}} $>$ $\ast$}]{pairs }\end{DoxyParamCaption})}
+
+Fills the tables of the next collisions 
+\begin{DoxyParams}{Parameters}
+{\em pairs} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 893 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, box\+\_\+y, get\+\_\+particles\+\_\+len(), and particles.
+
+
+
+Referenced by step\+\_\+all().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a654072dec38aee93903bdce321890a80_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_ac5f8e08337a1ef96531495a6aee8bfb9}\label{classClassSiec_ac5f8e08337a1ef96531495a6aee8bfb9}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius@{get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius}}
+\index{get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius@{get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius()}{get\_number\_of\_particles\_in\_radius()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint64\+\_\+t Class\+Siec\+::get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{double}]{dr,  }\item[{\mbox{\hyperlink{structparticle}{particle}} $\ast$}]{for\+\_\+particle }\end{DoxyParamCaption})}
+
+Get the number of particles in radius for center of particle 
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em dr} & \\
+\hline
+{\em for\+\_\+particle} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1236 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, box\+\_\+y, particle\+::get\+\_\+distance(), get\+\_\+particles\+\_\+len(), and particles.
+
+
+
+Referenced by get\+\_\+radial\+\_\+distribution\+\_\+function(), get\+\_\+\+R\+D\+F\+\_\+r(), and thread\+\_\+\+R\+D\+F().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_ac5f8e08337a1ef96531495a6aee8bfb9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a0c89392852117a823a1a603f4181b3a7}\label{classClassSiec_a0c89392852117a823a1a603f4181b3a7}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius@{get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius}}
+\index{get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius@{get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius()}{get\_number\_of\_particles\_in\_radius()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint64\+\_\+t Class\+Siec\+::get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{double}]{dr }\end{DoxyParamCaption})}
+
+Get number of particles in radius of each particles 
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em dr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1262 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, box\+\_\+y, get\+\_\+distance\+\_\+2d(), get\+\_\+particles\+\_\+len(), and particles.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a0c89392852117a823a1a603f4181b3a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a1b7f3db9473b2660b3a6c1dfeee45e22}\label{classClassSiec_a1b7f3db9473b2660b3a6c1dfeee45e22}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+packing\+\_\+ratio@{get\+\_\+packing\+\_\+ratio}}
+\index{get\+\_\+packing\+\_\+ratio@{get\+\_\+packing\+\_\+ratio}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+packing\+\_\+ratio()}{get\_packing\_ratio()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+packing\+\_\+ratio (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get the packing ratio of the particles in the box \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1197 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, box\+\_\+y, get\+\_\+particles\+\_\+len(), and particles.
+
+
+
+Referenced by get\+\_\+radial\+\_\+distribution\+\_\+function\+\_\+theoretical(), get\+\_\+state\+\_\+space\+\_\+\+Boublik(), get\+\_\+state\+\_\+space\+\_\+\+Handerson(), get\+\_\+state\+\_\+space\+\_\+\+Solan(), get\+\_\+static\+\_\+parameters\+\_\+info(), and get\+\_\+static\+\_\+parameters\+\_\+raw().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a1b7f3db9473b2660b3a6c1dfeee45e22_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_aa4c36868471f5747008cea881f1038c1}\label{classClassSiec_aa4c36868471f5747008cea881f1038c1}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+particle@{get\+\_\+particle}}
+\index{get\+\_\+particle@{get\+\_\+particle}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+particle()}{get\_particle()}}
+{\footnotesize\ttfamily int Class\+Siec\+::get\+\_\+particle (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{nr,  }\item[{\mbox{\hyperlink{structparticle}{particle}} $\ast$}]{here }\end{DoxyParamCaption})}
+
+Get address of particle with number to destination \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Probably useless \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em nr} & \\
+\hline
+{\em here} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 830 of file Class\+Siec.\+cpp.
+
+
+
+References E\+R\+R\+OR, OK, and particles.
+
+\mbox{\Hypertarget{classClassSiec_a5fa315d36ce3648e5e5c2bf66b744e18}\label{classClassSiec_a5fa315d36ce3648e5e5c2bf66b744e18}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+particles\+\_\+len@{get\+\_\+particles\+\_\+len}}
+\index{get\+\_\+particles\+\_\+len@{get\+\_\+particles\+\_\+len}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+particles\+\_\+len()}{get\_particles\_len()}}
+{\footnotesize\ttfamily uint64\+\_\+t Class\+Siec\+::get\+\_\+particles\+\_\+len (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+numbers of particles 
+\end{DoxyReturn}
+
+
+Definition at line 415 of file Class\+Siec.\+cpp.
+
+
+
+References particles.
+
+
+
+Referenced by draw\+\_\+all(), fix\+\_\+position(), get\+\_\+density(), get\+\_\+density\+\_\+real(), get\+\_\+kinetic\+\_\+energy(), get\+\_\+max\+\_\+radius(), get\+\_\+min\+\_\+radius(), get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number(), get\+\_\+next\+\_\+collision\+\_\+particles(), get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius(), get\+\_\+packing\+\_\+ratio(), get\+\_\+\+R\+D\+F\+\_\+r(), get\+\_\+static\+\_\+parameters\+\_\+info(), get\+\_\+temperature(), get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function(), save\+\_\+\+R\+D\+F(), save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array(), set\+\_\+mass\+\_\+all(), set\+\_\+mass\+\_\+to\+\_\+area(), set\+\_\+mass\+\_\+to\+\_\+radius(), set\+\_\+momentum\+\_\+to\+\_\+zero(), set\+\_\+particles\+\_\+zero\+\_\+time(), set\+\_\+random\+\_\+size(), set\+\_\+random\+\_\+velocity(), step\+\_\+all(), and thread\+\_\+\+R\+D\+F().
+
+\mbox{\Hypertarget{classClassSiec_a1a3c05e29d9fb646f1733704db81933d}\label{classClassSiec_a1a3c05e29d9fb646f1733704db81933d}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+radial\+\_\+distribution\+\_\+function@{get\+\_\+radial\+\_\+distribution\+\_\+function}}
+\index{get\+\_\+radial\+\_\+distribution\+\_\+function@{get\+\_\+radial\+\_\+distribution\+\_\+function}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+radial\+\_\+distribution\+\_\+function()}{get\_radial\_distribution\_function()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+radial\+\_\+distribution\+\_\+function (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{double}]{dr,  }\item[{\mbox{\hyperlink{structparticle}{particle}} $\ast$}]{for\+\_\+particle,  }\item[{uint64\+\_\+t}]{prec = {\ttfamily 100} }\end{DoxyParamCaption})}
+
+Get Radial distribution Function for particle 
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em dr} & \\
+\hline
+{\em for\+\_\+particle} & \\
+\hline
+{\em prec} & -\/$>$ divide dr into \textquotesingle{}prec\textquotesingle{} parts zrobic histogramy dla wszystkich kulek i liczyc g(r) od (r/d) lub (r/sigma) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1296 of file Class\+Siec.\+cpp.
+
+
+
+References current\+\_\+\+R\+DF, get\+\_\+density(), and get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius().
+
+
+
+Referenced by step\+\_\+all().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a1a3c05e29d9fb646f1733704db81933d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a95685407da49bfa4d1a54fd248e8aee3}\label{classClassSiec_a95685407da49bfa4d1a54fd248e8aee3}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+radial\+\_\+distribution\+\_\+function@{get\+\_\+radial\+\_\+distribution\+\_\+function}}
+\index{get\+\_\+radial\+\_\+distribution\+\_\+function@{get\+\_\+radial\+\_\+distribution\+\_\+function}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+radial\+\_\+distribution\+\_\+function()}{get\_radial\_distribution\_function()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+radial\+\_\+distribution\+\_\+function (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{double}]{dr }\end{DoxyParamCaption})}
+
+Get Radial distribution Function \begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000003}{Bug}}]probably bad function \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em dr} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1328 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+density(), and get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a95685407da49bfa4d1a54fd248e8aee3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a87284d96c487a462bf8a42d81fc4bb8c}\label{classClassSiec_a87284d96c487a462bf8a42d81fc4bb8c}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+radial\+\_\+distribution\+\_\+function\+\_\+theoretical@{get\+\_\+radial\+\_\+distribution\+\_\+function\+\_\+theoretical}}
+\index{get\+\_\+radial\+\_\+distribution\+\_\+function\+\_\+theoretical@{get\+\_\+radial\+\_\+distribution\+\_\+function\+\_\+theoretical}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+radial\+\_\+distribution\+\_\+function\+\_\+theoretical()}{get\_radial\_distribution\_function\_theoretical()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+radial\+\_\+distribution\+\_\+function\+\_\+theoretical (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get Radial distribution Function -\/ theoretical \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]Check this \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1339 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+packing\+\_\+ratio().
+
+
+
+Referenced by get\+\_\+static\+\_\+parameters\+\_\+info().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a87284d96c487a462bf8a42d81fc4bb8c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a609cc786246741388e18ed50c0165388}\label{classClassSiec_a609cc786246741388e18ed50c0165388}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+\+R\+D\+F\+\_\+r@{get\+\_\+\+R\+D\+F\+\_\+r}}
+\index{get\+\_\+\+R\+D\+F\+\_\+r@{get\+\_\+\+R\+D\+F\+\_\+r}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+\+R\+D\+F\+\_\+r()}{get\_RDF\_r()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Class\+Siec\+::get\+\_\+\+R\+D\+F\+\_\+r (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{double}]{dr,  }\item[{uint64\+\_\+t}]{prec = {\ttfamily 100},  }\item[{std\+::string}]{sep = {\ttfamily \char`\"{}~\char`\"{}} }\end{DoxyParamCaption})}
+
+Get R\+DF 
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em dr} & \\
+\hline
+{\em prec} & \\
+\hline
+{\em sep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1625 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+density(), get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius(), get\+\_\+particles\+\_\+len(), and particles.
+
+
+
+Referenced by get\+\_\+\+R\+D\+F\+\_\+r().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a609cc786246741388e18ed50c0165388_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_aad7c55f1dfa1b5bca25fc39e0b509304}\label{classClassSiec_aad7c55f1dfa1b5bca25fc39e0b509304}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+\+R\+D\+F\+\_\+r@{get\+\_\+\+R\+D\+F\+\_\+r}}
+\index{get\+\_\+\+R\+D\+F\+\_\+r@{get\+\_\+\+R\+D\+F\+\_\+r}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+\+R\+D\+F\+\_\+r()}{get\_RDF\_r()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string Class\+Siec\+::get\+\_\+\+R\+D\+F\+\_\+r (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{prec = {\ttfamily 100},  }\item[{std\+::string}]{sep = {\ttfamily \char`\"{}~\char`\"{}} }\end{DoxyParamCaption})}
+
+Get default R\+DF 
+\begin{DoxyParams}{Parameters}
+{\em prec} & \\
+\hline
+{\em sep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1666 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, box\+\_\+y, and get\+\_\+\+R\+D\+F\+\_\+r().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_aad7c55f1dfa1b5bca25fc39e0b509304_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a8fb2e1fa04229aaa6027fed8dd996aea}\label{classClassSiec_a8fb2e1fa04229aaa6027fed8dd996aea}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+state\+\_\+space\+\_\+\+Boublik@{get\+\_\+state\+\_\+space\+\_\+\+Boublik}}
+\index{get\+\_\+state\+\_\+space\+\_\+\+Boublik@{get\+\_\+state\+\_\+space\+\_\+\+Boublik}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+state\+\_\+space\+\_\+\+Boublik()}{get\_state\_space\_Boublik()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+state\+\_\+space\+\_\+\+Boublik (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get state space -\/ Boublik \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1349 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+density(), get\+\_\+packing\+\_\+ratio(), get\+\_\+temperature(), and k\+Boltzmann.
+
+
+
+Referenced by get\+\_\+static\+\_\+parameters\+\_\+info(), and get\+\_\+static\+\_\+parameters\+\_\+raw().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a8fb2e1fa04229aaa6027fed8dd996aea_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a36144a1734674d3f0c6899c348da1a97}\label{classClassSiec_a36144a1734674d3f0c6899c348da1a97}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+state\+\_\+space\+\_\+\+Handerson@{get\+\_\+state\+\_\+space\+\_\+\+Handerson}}
+\index{get\+\_\+state\+\_\+space\+\_\+\+Handerson@{get\+\_\+state\+\_\+space\+\_\+\+Handerson}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+state\+\_\+space\+\_\+\+Handerson()}{get\_state\_space\_Handerson()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+state\+\_\+space\+\_\+\+Handerson (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get state space -\/ Handerson \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1363 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+density(), get\+\_\+packing\+\_\+ratio(), get\+\_\+temperature(), and k\+Boltzmann.
+
+
+
+Referenced by get\+\_\+static\+\_\+parameters\+\_\+info(), and get\+\_\+static\+\_\+parameters\+\_\+raw().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a36144a1734674d3f0c6899c348da1a97_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a3a0171519c3557d8edec22edb5978c9c}\label{classClassSiec_a3a0171519c3557d8edec22edb5978c9c}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+state\+\_\+space\+\_\+\+Solan@{get\+\_\+state\+\_\+space\+\_\+\+Solan}}
+\index{get\+\_\+state\+\_\+space\+\_\+\+Solan@{get\+\_\+state\+\_\+space\+\_\+\+Solan}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+state\+\_\+space\+\_\+\+Solan()}{get\_state\_space\_Solan()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+state\+\_\+space\+\_\+\+Solan (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get state space -\/ Solan \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1374 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+density(), get\+\_\+packing\+\_\+ratio(), get\+\_\+temperature(), and k\+Boltzmann.
+
+
+
+Referenced by get\+\_\+static\+\_\+parameters\+\_\+info(), and get\+\_\+static\+\_\+parameters\+\_\+raw().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a3a0171519c3557d8edec22edb5978c9c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_aaf3b24bc73d268f151acdff6351214e0}\label{classClassSiec_aaf3b24bc73d268f151acdff6351214e0}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+static\+\_\+parameters\+\_\+info@{get\+\_\+static\+\_\+parameters\+\_\+info}}
+\index{get\+\_\+static\+\_\+parameters\+\_\+info@{get\+\_\+static\+\_\+parameters\+\_\+info}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+static\+\_\+parameters\+\_\+info()}{get\_static\_parameters\_info()}}
+{\footnotesize\ttfamily std\+::string Class\+Siec\+::get\+\_\+static\+\_\+parameters\+\_\+info (\begin{DoxyParamCaption}\item[{std\+::string}]{sep = {\ttfamily \char`\"{}\textbackslash{}n\char`\"{}} }\end{DoxyParamCaption})}
+
+Get static parameters full 
+\begin{DoxyParams}{Parameters}
+{\em sep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1800 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+density(), get\+\_\+density\+\_\+real(), get\+\_\+diffusitivity\+\_\+delta(), get\+\_\+diffusitivity\+\_\+delta\+\_\+ratio(), get\+\_\+diffusivity(), get\+\_\+packing\+\_\+ratio(), get\+\_\+particles\+\_\+len(), get\+\_\+radial\+\_\+distribution\+\_\+function\+\_\+theoretical(), get\+\_\+state\+\_\+space\+\_\+\+Boublik(), get\+\_\+state\+\_\+space\+\_\+\+Handerson(), get\+\_\+state\+\_\+space\+\_\+\+Solan(), get\+\_\+temperature(), and get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_aaf3b24bc73d268f151acdff6351214e0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_abed8d28e81524a99ab325569db15bb36}\label{classClassSiec_abed8d28e81524a99ab325569db15bb36}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+static\+\_\+parameters\+\_\+raw@{get\+\_\+static\+\_\+parameters\+\_\+raw}}
+\index{get\+\_\+static\+\_\+parameters\+\_\+raw@{get\+\_\+static\+\_\+parameters\+\_\+raw}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+static\+\_\+parameters\+\_\+raw()}{get\_static\_parameters\_raw()}}
+{\footnotesize\ttfamily std\+::string Class\+Siec\+::get\+\_\+static\+\_\+parameters\+\_\+raw (\begin{DoxyParamCaption}\item[{std\+::string}]{sep = {\ttfamily \char`\"{}\textbackslash{}t\char`\"{}} }\end{DoxyParamCaption})}
+
+Get static parameters raw data only 
+\begin{DoxyParams}{Parameters}
+{\em sep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1838 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+density(), get\+\_\+density\+\_\+real(), get\+\_\+diffusitivity\+\_\+delta(), get\+\_\+diffusitivity\+\_\+delta\+\_\+ratio(), get\+\_\+diffusivity(), get\+\_\+packing\+\_\+ratio(), get\+\_\+state\+\_\+space\+\_\+\+Boublik(), get\+\_\+state\+\_\+space\+\_\+\+Handerson(), get\+\_\+state\+\_\+space\+\_\+\+Solan(), get\+\_\+temperature(), and get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_abed8d28e81524a99ab325569db15bb36_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a1fcb70fc39cb91fe5b5382c7911de316}\label{classClassSiec_a1fcb70fc39cb91fe5b5382c7911de316}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+static\+\_\+parameters\+\_\+title@{get\+\_\+static\+\_\+parameters\+\_\+title}}
+\index{get\+\_\+static\+\_\+parameters\+\_\+title@{get\+\_\+static\+\_\+parameters\+\_\+title}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+static\+\_\+parameters\+\_\+title()}{get\_static\_parameters\_title()}}
+{\footnotesize\ttfamily std\+::string Class\+Siec\+::get\+\_\+static\+\_\+parameters\+\_\+title (\begin{DoxyParamCaption}\item[{std\+::string}]{sep = {\ttfamily \char`\"{}\textbackslash{}t\char`\"{}} }\end{DoxyParamCaption})}
+
+Get static parameters only title 
+\begin{DoxyParams}{Parameters}
+{\em sep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1769 of file Class\+Siec.\+cpp.
+
+\mbox{\Hypertarget{classClassSiec_ae0e08ad933601148dcd2edc998c17a61}\label{classClassSiec_ae0e08ad933601148dcd2edc998c17a61}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+temperature@{get\+\_\+temperature}}
+\index{get\+\_\+temperature@{get\+\_\+temperature}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+temperature()}{get\_temperature()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+temperature (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get temperature \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1144 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+particles\+\_\+len(), k\+Boltzmann, and particles.
+
+
+
+Referenced by get\+\_\+state\+\_\+space\+\_\+\+Boublik(), get\+\_\+state\+\_\+space\+\_\+\+Handerson(), get\+\_\+state\+\_\+space\+\_\+\+Solan(), get\+\_\+static\+\_\+parameters\+\_\+info(), get\+\_\+static\+\_\+parameters\+\_\+raw(), and set\+\_\+momentum\+\_\+to\+\_\+zero().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_ae0e08ad933601148dcd2edc998c17a61_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a27ab9475c3e1da5cba2c8dce28e12444}\label{classClassSiec_a27ab9475c3e1da5cba2c8dce28e12444}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+time@{get\+\_\+time}}
+\index{get\+\_\+time@{get\+\_\+time}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+time()}{get\_time()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1135 of file Class\+Siec.\+cpp.
+
+
+
+Referenced by thread\+\_\+siec().
+
+\mbox{\Hypertarget{classClassSiec_acffa9f63d7236490d4e214a59e443140}\label{classClassSiec_acffa9f63d7236490d4e214a59e443140}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function@{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function}}
+\index{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function@{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function()}{get\_Velocity\_Autocorrelation\_Function()}}
+{\footnotesize\ttfamily float Class\+Siec\+::get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get Velocity Autocorrelation Function iloczyn skalarny vx(0)$\ast$vx(t) \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1388 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+particles\+\_\+len(), particles, and particles\+\_\+zero\+\_\+time.
+
+
+
+Referenced by get\+\_\+box\+\_\+info(), get\+\_\+box\+\_\+info\+\_\+raw(), get\+\_\+static\+\_\+parameters\+\_\+info(), get\+\_\+static\+\_\+parameters\+\_\+raw(), get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta\+\_\+ratio(), step\+\_\+all(), and thread\+\_\+siec().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_acffa9f63d7236490d4e214a59e443140_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a21be4d09c7aa47a5d3f216509ad5feef}\label{classClassSiec_a21be4d09c7aa47a5d3f216509ad5feef}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta@{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta}}
+\index{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta@{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta()}{get\_Velocity\_Autocorrelation\_Function\_delta()}}
+{\footnotesize\ttfamily double Class\+Siec\+::get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1431 of file Class\+Siec.\+cpp.
+
+
+
+References find\+\_\+delta().
+
+
+
+Referenced by get\+\_\+box\+\_\+info(), get\+\_\+box\+\_\+info\+\_\+raw(), and thread\+\_\+siec().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a21be4d09c7aa47a5d3f216509ad5feef_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_af6d6dbab3224e645c67e6c7dd2e02378}\label{classClassSiec_af6d6dbab3224e645c67e6c7dd2e02378}} 
+\index{Class\+Siec@{Class\+Siec}!get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta\+\_\+ratio@{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta\+\_\+ratio}}
+\index{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta\+\_\+ratio@{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta\+\_\+ratio}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta\+\_\+ratio()}{get\_Velocity\_Autocorrelation\_Function\_delta\_ratio()}}
+{\footnotesize\ttfamily double Class\+Siec\+::get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function\+\_\+delta\+\_\+ratio (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Get Velocity Autocorrelation Function delta ratio \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1449 of file Class\+Siec.\+cpp.
+
+
+
+References find\+\_\+delta(), and get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_af6d6dbab3224e645c67e6c7dd2e02378_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a5c2c133544d66df25e8b13e6b710272e}\label{classClassSiec_a5c2c133544d66df25e8b13e6b710272e}} 
+\index{Class\+Siec@{Class\+Siec}!init@{init}}
+\index{init@{init}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily int Class\+Siec\+::init (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 953 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+box\+\_\+info\+\_\+title(), OK, and set\+\_\+particles\+\_\+zero\+\_\+time().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a5c2c133544d66df25e8b13e6b710272e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_ab49b9f6b28f5e3c319384f518042272a}\label{classClassSiec_ab49b9f6b28f5e3c319384f518042272a}} 
+\index{Class\+Siec@{Class\+Siec}!insert\+\_\+to\+\_\+file@{insert\+\_\+to\+\_\+file}}
+\index{insert\+\_\+to\+\_\+file@{insert\+\_\+to\+\_\+file}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{insert\+\_\+to\+\_\+file()}{insert\_to\_file()}}
+{\footnotesize\ttfamily int Class\+Siec\+::insert\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{std\+::string}]{data }\end{DoxyParamCaption})}
+
+Flush string to file 
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 972 of file Class\+Siec.\+cpp.
+
+
+
+References OK.
+
+
+
+Referenced by main(), save\+\_\+\+R\+D\+F(), and step\+\_\+all().
+
+\mbox{\Hypertarget{classClassSiec_a984c7c1d77c9cf78b6254529088028a4}\label{classClassSiec_a984c7c1d77c9cf78b6254529088028a4}} 
+\index{Class\+Siec@{Class\+Siec}!save\+\_\+\+R\+DF@{save\+\_\+\+R\+DF}}
+\index{save\+\_\+\+R\+DF@{save\+\_\+\+R\+DF}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{save\+\_\+\+R\+D\+F()}{save\_RDF()}}
+{\footnotesize\ttfamily int Class\+Siec\+::save\+\_\+\+R\+DF (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{prec = {\ttfamily 100},  }\item[{std\+::string}]{sep = {\ttfamily \char`\"{}~\char`\"{}} }\end{DoxyParamCaption})}
+
+Save default R\+DF to file 
+\begin{DoxyParams}{Parameters}
+{\em prec} & \\
+\hline
+{\em sep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1678 of file Class\+Siec.\+cpp.
+
+
+
+References current\+\_\+\+R\+DF, get\+\_\+particles\+\_\+len(), insert\+\_\+to\+\_\+file(), OK, and thread\+\_\+\+R\+D\+F().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a984c7c1d77c9cf78b6254529088028a4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a9c96b5d39e27f8f2bdda6fd60113ceb6}\label{classClassSiec_a9c96b5d39e27f8f2bdda6fd60113ceb6}} 
+\index{Class\+Siec@{Class\+Siec}!save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array@{save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array}}
+\index{save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array@{save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array()}{save\_RDF\_to\_array()}}
+{\footnotesize\ttfamily void Class\+Siec\+::save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ $\ast$}]{array,  }\item[{uint64\+\_\+t}]{prec = {\ttfamily 100} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 1711 of file Class\+Siec.\+cpp.
+
+
+
+References current\+\_\+\+R\+DF, get\+\_\+particles\+\_\+len(), and thread\+\_\+\+R\+D\+F().
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a9c96b5d39e27f8f2bdda6fd60113ceb6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a2ef8ae6a08683c8ed1c4e9d89b79e08e}\label{classClassSiec_a2ef8ae6a08683c8ed1c4e9d89b79e08e}} 
+\index{Class\+Siec@{Class\+Siec}!set\+\_\+dt@{set\+\_\+dt}}
+\index{set\+\_\+dt@{set\+\_\+dt}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{set\+\_\+dt()}{set\_dt()}}
+{\footnotesize\ttfamily int Class\+Siec\+::set\+\_\+dt (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})}
+
+Set delta time \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]function is deprecated \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 394 of file Class\+Siec.\+cpp.
+
+
+
+References OK.
+
+\mbox{\Hypertarget{classClassSiec_a2adaa0e7fe44a2a68b7eba11c52d21bd}\label{classClassSiec_a2adaa0e7fe44a2a68b7eba11c52d21bd}} 
+\index{Class\+Siec@{Class\+Siec}!set\+\_\+mass\+\_\+all@{set\+\_\+mass\+\_\+all}}
+\index{set\+\_\+mass\+\_\+all@{set\+\_\+mass\+\_\+all}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{set\+\_\+mass\+\_\+all()}{set\_mass\_all()}}
+{\footnotesize\ttfamily int Class\+Siec\+::set\+\_\+mass\+\_\+all (\begin{DoxyParamCaption}\item[{double}]{mass = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+Sets the masses for all particles 
+\begin{DoxyParams}{Parameters}
+{\em mass} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 745 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+particles\+\_\+len(), OK, and particles.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a2adaa0e7fe44a2a68b7eba11c52d21bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_aa2eff85fe7fc842b2d0631118d533154}\label{classClassSiec_aa2eff85fe7fc842b2d0631118d533154}} 
+\index{Class\+Siec@{Class\+Siec}!set\+\_\+mass\+\_\+to\+\_\+area@{set\+\_\+mass\+\_\+to\+\_\+area}}
+\index{set\+\_\+mass\+\_\+to\+\_\+area@{set\+\_\+mass\+\_\+to\+\_\+area}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{set\+\_\+mass\+\_\+to\+\_\+area()}{set\_mass\_to\_area()}}
+{\footnotesize\ttfamily int Class\+Siec\+::set\+\_\+mass\+\_\+to\+\_\+area (\begin{DoxyParamCaption}\item[{double}]{ratio = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+Sets the masses according to the area of particle 
+\begin{DoxyParams}{Parameters}
+{\em ratio} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 730 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+particles\+\_\+len(), OK, and particles.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_aa2eff85fe7fc842b2d0631118d533154_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a361b139e9734e15599847d2060d85d6b}\label{classClassSiec_a361b139e9734e15599847d2060d85d6b}} 
+\index{Class\+Siec@{Class\+Siec}!set\+\_\+mass\+\_\+to\+\_\+radius@{set\+\_\+mass\+\_\+to\+\_\+radius}}
+\index{set\+\_\+mass\+\_\+to\+\_\+radius@{set\+\_\+mass\+\_\+to\+\_\+radius}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{set\+\_\+mass\+\_\+to\+\_\+radius()}{set\_mass\_to\_radius()}}
+{\footnotesize\ttfamily int Class\+Siec\+::set\+\_\+mass\+\_\+to\+\_\+radius (\begin{DoxyParamCaption}\item[{double}]{ratio = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+Sets the masses according to the radius of particle 
+\begin{DoxyParams}{Parameters}
+{\em ratio} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 716 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+particles\+\_\+len(), OK, and particles.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a361b139e9734e15599847d2060d85d6b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_ab2a445e522e2d8c59177fd28c074c1c1}\label{classClassSiec_ab2a445e522e2d8c59177fd28c074c1c1}} 
+\index{Class\+Siec@{Class\+Siec}!set\+\_\+momentum\+\_\+to\+\_\+zero@{set\+\_\+momentum\+\_\+to\+\_\+zero}}
+\index{set\+\_\+momentum\+\_\+to\+\_\+zero@{set\+\_\+momentum\+\_\+to\+\_\+zero}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{set\+\_\+momentum\+\_\+to\+\_\+zero()}{set\_momentum\_to\_zero()}}
+{\footnotesize\ttfamily int Class\+Siec\+::set\+\_\+momentum\+\_\+to\+\_\+zero (\begin{DoxyParamCaption}\item[{double}]{temperature,  }\item[{double}]{precision = {\ttfamily 0.001} }\end{DoxyParamCaption})}
+
+Set temperature to Ekpoz\+\_\+t 
+\begin{DoxyParams}{Parameters}
+{\em Ekpoz\+\_\+t} & \\
+\hline
+{\em precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 760 of file Class\+Siec.\+cpp.
+
+
+
+References find\+\_\+is\+\_\+in\+\_\+range(), get\+\_\+kinetic\+\_\+energy(), get\+\_\+particles\+\_\+len(), get\+\_\+temperature(), OK, and particles.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_ab2a445e522e2d8c59177fd28c074c1c1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a37811fccdbeb4119061a02cfb9386677}\label{classClassSiec_a37811fccdbeb4119061a02cfb9386677}} 
+\index{Class\+Siec@{Class\+Siec}!set\+\_\+particles\+\_\+zero\+\_\+time@{set\+\_\+particles\+\_\+zero\+\_\+time}}
+\index{set\+\_\+particles\+\_\+zero\+\_\+time@{set\+\_\+particles\+\_\+zero\+\_\+time}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{set\+\_\+particles\+\_\+zero\+\_\+time()}{set\_particles\_zero\_time()}}
+{\footnotesize\ttfamily int Class\+Siec\+::set\+\_\+particles\+\_\+zero\+\_\+time (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Saves the initial states to an individual array \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 806 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+particles\+\_\+len(), OK, particles, and particles\+\_\+zero\+\_\+time.
+
+
+
+Referenced by init(), and main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a37811fccdbeb4119061a02cfb9386677_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a4b63c475330f7b0c96a244f55a624fac}\label{classClassSiec_a4b63c475330f7b0c96a244f55a624fac}} 
+\index{Class\+Siec@{Class\+Siec}!set\+\_\+random\+\_\+size@{set\+\_\+random\+\_\+size}}
+\index{set\+\_\+random\+\_\+size@{set\+\_\+random\+\_\+size}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{set\+\_\+random\+\_\+size()}{set\_random\_size()}}
+{\footnotesize\ttfamily int Class\+Siec\+::set\+\_\+random\+\_\+size (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})}
+
+Set random size of particles 
+\begin{DoxyParams}{Parameters}
+{\em min} & \\
+\hline
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 692 of file Class\+Siec.\+cpp.
+
+
+
+References E\+R\+R\+OR, get\+\_\+particles\+\_\+len(), OK, and particles.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a4b63c475330f7b0c96a244f55a624fac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a29968ccc2e9318ca89ae0b3dac4a390d}\label{classClassSiec_a29968ccc2e9318ca89ae0b3dac4a390d}} 
+\index{Class\+Siec@{Class\+Siec}!set\+\_\+random\+\_\+velocity@{set\+\_\+random\+\_\+velocity}}
+\index{set\+\_\+random\+\_\+velocity@{set\+\_\+random\+\_\+velocity}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{set\+\_\+random\+\_\+velocity()}{set\_random\_velocity()}}
+{\footnotesize\ttfamily int Class\+Siec\+::set\+\_\+random\+\_\+velocity (\begin{DoxyParamCaption}\item[{double}]{multiplier = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+Set random velocity for all particles 
+\begin{DoxyParams}{Parameters}
+{\em multiplier} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 668 of file Class\+Siec.\+cpp.
+
+
+
+References get\+\_\+particles\+\_\+len(), OK, and particles.
+
+
+
+Referenced by main().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a29968ccc2e9318ca89ae0b3dac4a390d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classClassSiec_a0de17762248441c53936ee7924776052}\label{classClassSiec_a0de17762248441c53936ee7924776052}} 
+\index{Class\+Siec@{Class\+Siec}!step\+\_\+all@{step\+\_\+all}}
+\index{step\+\_\+all@{step\+\_\+all}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{step\+\_\+all()}{step\_all()}}
+{\footnotesize\ttfamily int Class\+Siec\+::step\+\_\+all (\begin{DoxyParamCaption}\item[{int}]{debug = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Step all particles \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 1001 of file Class\+Siec.\+cpp.
+
+
+
+References box\+\_\+x, box\+\_\+y, particle\+::color, distance, distancex, distancey, fix\+\_\+position(), get\+\_\+box\+\_\+info(), get\+\_\+box\+\_\+info\+\_\+raw(), get\+\_\+min\+\_\+radius(), get\+\_\+next\+\_\+collision\+\_\+particles(), get\+\_\+particles\+\_\+len(), get\+\_\+radial\+\_\+distribution\+\_\+function(), particle\+::get\+\_\+velocity(), get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function(), insert\+\_\+to\+\_\+file(), OK, particles, particle\+::pos, particle\+::t, th\+\_\+to\+\_\+box(), particle\+::vel, and zderzenie().
+
+
+
+Referenced by main(), and thread\+\_\+siec().
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classClassSiec_a0de17762248441c53936ee7924776052_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classClassSiec_a8ebc9e2a0a8f7ccf4736482aa2a5f673}\label{classClassSiec_a8ebc9e2a0a8f7ccf4736482aa2a5f673}} 
+\index{Class\+Siec@{Class\+Siec}!box\+\_\+x@{box\+\_\+x}}
+\index{box\+\_\+x@{box\+\_\+x}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{box\+\_\+x}{box\_x}}
+{\footnotesize\ttfamily double Class\+Siec\+::box\+\_\+x}
+
+
+
+Definition at line 200 of file Class\+Siec.\+h.
+
+
+
+Referenced by Class\+Siec(), convert\+\_\+to\+\_\+box(), create\+\_\+hexagonal(), create\+\_\+honeycomb(), create\+\_\+square(), fix\+\_\+position(), get\+\_\+box\+\_\+x(), get\+\_\+density(), get\+\_\+density\+\_\+real(), get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number(), get\+\_\+next\+\_\+collision\+\_\+particles(), get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius(), get\+\_\+packing\+\_\+ratio(), get\+\_\+\+R\+D\+F\+\_\+r(), and step\+\_\+all().
+
+\mbox{\Hypertarget{classClassSiec_a51b98a4d58f22b84e410eaf2c7b31c4b}\label{classClassSiec_a51b98a4d58f22b84e410eaf2c7b31c4b}} 
+\index{Class\+Siec@{Class\+Siec}!box\+\_\+y@{box\+\_\+y}}
+\index{box\+\_\+y@{box\+\_\+y}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{box\+\_\+y}{box\_y}}
+{\footnotesize\ttfamily double Class\+Siec\+::box\+\_\+y}
+
+
+
+Definition at line 201 of file Class\+Siec.\+h.
+
+
+
+Referenced by Class\+Siec(), convert\+\_\+to\+\_\+box(), create\+\_\+hexagonal(), create\+\_\+honeycomb(), create\+\_\+square(), fix\+\_\+position(), get\+\_\+box\+\_\+y(), get\+\_\+density(), get\+\_\+density\+\_\+real(), get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number(), get\+\_\+next\+\_\+collision\+\_\+particles(), get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius(), get\+\_\+packing\+\_\+ratio(), get\+\_\+\+R\+D\+F\+\_\+r(), and step\+\_\+all().
+
+\mbox{\Hypertarget{classClassSiec_aaa4641c3eb550d26c64a785729e8cd63}\label{classClassSiec_aaa4641c3eb550d26c64a785729e8cd63}} 
+\index{Class\+Siec@{Class\+Siec}!current\+\_\+\+R\+DF@{current\+\_\+\+R\+DF}}
+\index{current\+\_\+\+R\+DF@{current\+\_\+\+R\+DF}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{current\+\_\+\+R\+DF}{current\_RDF}}
+{\footnotesize\ttfamily vector$<$double$>$ Class\+Siec\+::current\+\_\+\+R\+DF}
+
+
+
+Definition at line 196 of file Class\+Siec.\+h.
+
+
+
+Referenced by draw\+\_\+\+R\+D\+F(), get\+\_\+radial\+\_\+distribution\+\_\+function(), save\+\_\+\+R\+D\+F(), save\+\_\+\+R\+D\+F\+\_\+to\+\_\+array(), and thread\+\_\+\+R\+D\+F().
+
+\mbox{\Hypertarget{classClassSiec_a4593ac900fa92dd33f9b40010b35efb9}\label{classClassSiec_a4593ac900fa92dd33f9b40010b35efb9}} 
+\index{Class\+Siec@{Class\+Siec}!distance@{distance}}
+\index{distance@{distance}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily double Class\+Siec\+::distance}
+
+
+
+Definition at line 199 of file Class\+Siec.\+h.
+
+
+
+Referenced by step\+\_\+all().
+
+\mbox{\Hypertarget{classClassSiec_a98e9ee22a2e12ce6612d1ce6e785cda2}\label{classClassSiec_a98e9ee22a2e12ce6612d1ce6e785cda2}} 
+\index{Class\+Siec@{Class\+Siec}!distancex@{distancex}}
+\index{distancex@{distancex}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{distancex}{distancex}}
+{\footnotesize\ttfamily double Class\+Siec\+::distancex}
+
+
+
+Definition at line 197 of file Class\+Siec.\+h.
+
+
+
+Referenced by step\+\_\+all().
+
+\mbox{\Hypertarget{classClassSiec_a5c100f779c613f9c747b0b7a3f02f2d9}\label{classClassSiec_a5c100f779c613f9c747b0b7a3f02f2d9}} 
+\index{Class\+Siec@{Class\+Siec}!distancey@{distancey}}
+\index{distancey@{distancey}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{distancey}{distancey}}
+{\footnotesize\ttfamily double Class\+Siec\+::distancey}
+
+
+
+Definition at line 198 of file Class\+Siec.\+h.
+
+
+
+Referenced by step\+\_\+all().
+
+\mbox{\Hypertarget{classClassSiec_aa1a11eee47b10c11930952f092110e94}\label{classClassSiec_aa1a11eee47b10c11930952f092110e94}} 
+\index{Class\+Siec@{Class\+Siec}!particles@{particles}}
+\index{particles@{particles}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{particles}{particles}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{structparticle}{particle}}$>$ Class\+Siec\+::particles}
+
+
+
+Definition at line 194 of file Class\+Siec.\+h.
+
+
+
+Referenced by add\+\_\+particle(), create\+\_\+hexagonal(), create\+\_\+honeycomb(), draw\+\_\+all(), fix\+\_\+position(), get\+\_\+density\+\_\+real(), get\+\_\+kinetic\+\_\+energy(), get\+\_\+max\+\_\+radius(), get\+\_\+min\+\_\+radius(), get\+\_\+next\+\_\+collision\+\_\+particle\+\_\+number(), get\+\_\+next\+\_\+collision\+\_\+particles(), get\+\_\+number\+\_\+of\+\_\+particles\+\_\+in\+\_\+radius(), get\+\_\+packing\+\_\+ratio(), get\+\_\+particle(), get\+\_\+particles\+\_\+len(), get\+\_\+\+R\+D\+F\+\_\+r(), get\+\_\+temperature(), get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function(), set\+\_\+mass\+\_\+all(), set\+\_\+mass\+\_\+to\+\_\+area(), set\+\_\+mass\+\_\+to\+\_\+radius(), set\+\_\+momentum\+\_\+to\+\_\+zero(), set\+\_\+particles\+\_\+zero\+\_\+time(), set\+\_\+random\+\_\+size(), set\+\_\+random\+\_\+velocity(), step\+\_\+all(), thread\+\_\+\+R\+D\+F(), and $\sim$\+Class\+Siec().
+
+\mbox{\Hypertarget{classClassSiec_aa1096135e230dbae78ec05efc8a4725f}\label{classClassSiec_aa1096135e230dbae78ec05efc8a4725f}} 
+\index{Class\+Siec@{Class\+Siec}!particles\+\_\+zero\+\_\+time@{particles\+\_\+zero\+\_\+time}}
+\index{particles\+\_\+zero\+\_\+time@{particles\+\_\+zero\+\_\+time}!Class\+Siec@{Class\+Siec}}
+\subsubsection{\texorpdfstring{particles\+\_\+zero\+\_\+time}{particles\_zero\_time}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{structparticle__zero__time}{particle\+\_\+zero\+\_\+time}}$>$ Class\+Siec\+::particles\+\_\+zero\+\_\+time}
+
+
+
+Definition at line 195 of file Class\+Siec.\+h.
+
+
+
+Referenced by get\+\_\+\+Velocity\+\_\+\+Autocorrelation\+\_\+\+Function(), and set\+\_\+particles\+\_\+zero\+\_\+time().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ClassSiec_8h}{Class\+Siec.\+h}}\item 
+\mbox{\hyperlink{ClassSiec_8cpp}{Class\+Siec.\+cpp}}\end{DoxyCompactItemize}
